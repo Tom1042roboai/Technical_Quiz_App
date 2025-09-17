@@ -1,0 +1,482 @@
+[
+  {
+    "id": "rob_001",
+    "question": "What are the main components of a robotic system?",
+    "options": [
+      "Only sensors and actuators",
+      "Sensors, actuators, and control system",
+      "Just the control system",
+      "Only the mechanical structure"
+    ],
+    "answer": "Sensors, actuators, and control system",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "A robotic system typically consists of sensors (for perception), actuators (for movement), and a control system (for decision-making and coordination).",
+    "topic": "Robotics"
+  },
+  {
+    "id": "rob_002",
+    "question": "What is forward kinematics in robotics?",
+    "options": [
+      "Moving the robot forward",
+      "Computing end-effector position from joint angles",
+      "Planning the robot's path",
+      "Controlling robot speed"
+    ],
+    "answer": "Computing end-effector position from joint angles",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Forward kinematics determines the position and orientation of the robot's end-effector given the joint angles and link parameters.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "rob_003",
+    "question": "What is inverse kinematics?",
+    "options": [
+      "The opposite of forward kinematics",
+      "Computing joint angles needed to reach a desired end-effector position",
+      "Moving the robot backwards",
+      "Reversing robot movements"
+    ],
+    "answer": "Computing joint angles needed to reach a desired end-effector position",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Inverse kinematics calculates the joint angles required to position the robot's end-effector at a desired location and orientation.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "rob_004",
+    "question": "What is SLAM in robotics?",
+    "options": [
+      "Simultaneous Localization and Mapping",
+      "Sequential Learning and Movement",
+      "Systematic Logic and Motion",
+      "Sensor-based Location and Monitoring"
+    ],
+    "answer": "Simultaneous Localization and Mapping",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "SLAM (Simultaneous Localization and Mapping) is the process of building a map of an unknown environment while simultaneously keeping track of the robot's location within it.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "rob_005",
+    "question": "What is a degree of freedom (DOF) in robotics?",
+    "options": [
+      "The robot's battery life",
+      "The number of independent ways a robot can move",
+      "The robot's processing speed",
+      "The number of sensors on the robot"
+    ],
+    "answer": "The number of independent ways a robot can move",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Degrees of freedom refer to the number of independent parameters that define the configuration or pose of a robotic system.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "rob_006",
+    "question": "What is the difference between accuracy and precision in robotics?",
+    "options": [
+      "They are the same thing",
+      "Accuracy is how close to target, precision is repeatability",
+      "Accuracy is for sensors, precision is for actuators",
+      "Accuracy is faster than precision"
+    ],
+    "answer": "Accuracy is how close to target, precision is repeatability",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Accuracy refers to how close the robot gets to the intended target, while precision refers to how repeatable the robot's movements are.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "rob_007",
+    "question": "What is path planning in robotics?",
+    "options": [
+      "Planning robot maintenance schedules",
+      "Determining optimal route from start to goal while avoiding obstacles",
+      "Planning robot power consumption",
+      "Scheduling robot tasks"
+    ],
+    "answer": "Determining optimal route from start to goal while avoiding obstacles",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Path planning involves finding an optimal or feasible path for a robot to move from its current position to a target position while avoiding obstacles.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "rob_008",
+    "question": "What is the difference between open-loop and closed-loop control?",
+    "options": [
+      "Open-loop is faster than closed-loop",
+      "Open-loop has no feedback, closed-loop uses feedback for correction",
+      "Open-loop is more accurate than closed-loop",
+      "There is no difference"
+    ],
+    "answer": "Open-loop has no feedback, closed-loop uses feedback for correction",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Open-loop control operates without feedback, while closed-loop control uses feedback to adjust and correct the system's behavior in real-time.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_009",
+    "question": "What is the difference between open-loop and closed-loop control?",
+    "options": [
+      "Open-loop has no feedback, closed-loop uses feedback to adjust control",
+      "Closed-loop is always faster than open-loop",
+      "Open-loop is more accurate than closed-loop",
+      "There is no difference"
+    ],
+    "answer": "Open-loop has no feedback, closed-loop uses feedback to adjust control",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Open-loop control executes commands without feedback, while closed-loop control uses sensor feedback to continuously adjust control actions.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_010",
+    "question": "What is a PID controller?",
+    "options": [
+      "A controller using Proportional, Integral, and Derivative terms",
+      "A type of motor controller",
+      "A sensor for position detection",
+      "A programming language for robots"
+    ],
+    "answer": "A controller using Proportional, Integral, and Derivative terms",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "PID controllers combine proportional (current error), integral (accumulated error), and derivative (rate of error change) terms to achieve stable control.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_011",
+    "question": "What is simultaneous localization and mapping (SLAM)?",
+    "options": [
+      "Building a map while tracking robot's location within that map",
+      "A method for robot communication",
+      "A technique for path optimization",
+      "A sensor calibration process"
+    ],
+    "answer": "Building a map while tracking robot's location within that map",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "SLAM solves the problem of a robot building a map of an unknown environment while simultaneously keeping track of its location within that map.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_012",
+    "question": "What is the difference between holonomic and non-holonomic robots?",
+    "options": [
+      "Holonomic can move in any direction instantly, non-holonomic have movement constraints",
+      "Non-holonomic robots are always faster",
+      "Holonomic robots only work indoors",
+      "There is no difference"
+    ],
+    "answer": "Holonomic can move in any direction instantly, non-holonomic have movement constraints",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Holonomic robots can move in any direction without changing orientation (e.g., omniwheels), while non-holonomic robots have kinematic constraints (e.g., cars).",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_013",
+    "question": "What is sensor fusion in robotics?",
+    "options": [
+      "Combining data from multiple sensors to improve accuracy and reliability",
+      "Physically connecting sensors together",
+      "Using only one type of sensor",
+      "A method for sensor calibration"
+    ],
+    "answer": "Combining data from multiple sensors to improve accuracy and reliability",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Sensor fusion integrates data from multiple sensors (cameras, lidar, IMU) to create more accurate and robust perception than any single sensor.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_014",
+    "question": "What is the purpose of a Kalman filter in robotics?",
+    "options": [
+      "To estimate system state from noisy sensor measurements",
+      "To control robot motors",
+      "To plan robot paths",
+      "To detect obstacles"
+    ],
+    "answer": "To estimate system state from noisy sensor measurements",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Kalman filters optimally estimate system state (position, velocity) by combining predictions with noisy sensor measurements, accounting for uncertainty.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_015",
+    "question": "What is the difference between global and local path planning?",
+    "options": [
+      "Global plans entire route, local handles immediate obstacles and adjustments",
+      "Global is faster than local planning",
+      "Local planning covers longer distances",
+      "There is no difference"
+    ],
+    "answer": "Global plans entire route, local handles immediate obstacles and adjustments",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Global path planning creates an overall route from start to goal, while local planning handles immediate obstacles and real-time adjustments.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_016",
+    "question": "What is ROS (Robot Operating System)?",
+    "options": [
+      "A middleware framework for robot software development",
+      "An operating system that runs only on robots",
+      "A programming language for robotics",
+      "A type of robot hardware"
+    ],
+    "answer": "A middleware framework for robot software development",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "ROS is a flexible framework providing tools, libraries, and conventions for creating complex robot behavior across different platforms.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_017",
+    "question": "What is computer vision's role in robotics?",
+    "options": [
+      "Enables robots to perceive and understand visual information from environment",
+      "Controls robot movement",
+      "Manages robot power consumption",
+      "Handles robot communication"
+    ],
+    "answer": "Enables robots to perceive and understand visual information from environment",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Computer vision allows robots to process visual data from cameras to recognize objects, navigate, and interact with their environment.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_018",
+    "question": "What is the difference between reactive and deliberative control?",
+    "options": [
+      "Reactive responds immediately to stimuli, deliberative plans before acting",
+      "Deliberative is always faster than reactive",
+      "Reactive control requires more computation",
+      "There is no difference"
+    ],
+    "answer": "Reactive responds immediately to stimuli, deliberative plans before acting",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Reactive control responds directly to sensor inputs without planning, while deliberative control involves reasoning and planning before action.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_019",
+    "question": "What is odometry in robotics?",
+    "options": [
+      "Estimating robot position based on wheel rotations or movement data",
+      "A type of sensor for distance measurement",
+      "A method for obstacle detection",
+      "A technique for robot communication"
+    ],
+    "answer": "Estimating robot position based on wheel rotations or movement data",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Odometry estimates robot position and orientation by integrating movement data from wheel encoders or other motion sensors over time.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_020",
+    "question": "What is the purpose of a robot's end-effector?",
+    "options": [
+      "The tool or device at the end of robotic arm that interacts with environment",
+      "The main control unit of the robot",
+      "The power supply system",
+      "The communication interface"
+    ],
+    "answer": "The tool or device at the end of robotic arm that interacts with environment",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "End-effectors are tools mounted at the end of robotic arms (grippers, welders, cameras) that perform specific tasks and interact with the environment.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_021",
+    "question": "What is impedance control in robotics?",
+    "options": [
+      "A control method that regulates the relationship between force and motion",
+      "A method to control electrical impedance in motors",
+      "A technique for wireless communication",
+      "A way to reduce robot weight"
+    ],
+    "answer": "A control method that regulates the relationship between force and motion",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Impedance control modulates the robot's mechanical impedance (stiffness/compliance) to achieve desired force-motion relationships during interaction tasks.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_022",
+    "question": "What is the difference between accuracy and precision in robotics?",
+    "options": [
+      "Accuracy is closeness to target, precision is repeatability of movements",
+      "Precision is always more important than accuracy",
+      "Accuracy and precision mean the same thing",
+      "Precision refers to speed, accuracy refers to power"
+    ],
+    "answer": "Accuracy is closeness to target, precision is repeatability of movements",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Accuracy measures how close robot movements are to intended targets, while precision measures how repeatable movements are to the same target.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_023",
+    "question": "What is a robotic manipulator?",
+    "options": [
+      "A robotic arm designed to move and position objects in space",
+      "Software for controlling robots",
+      "A type of mobile robot",
+      "A robot communication protocol"
+    ],
+    "answer": "A robotic arm designed to move and position objects in space",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Robotic manipulators are multi-jointed arms that can move and position objects in 3D space, commonly used in manufacturing and assembly.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_024",
+    "question": "What is the workspace of a robot?",
+    "options": [
+      "The volume of space that the robot's end-effector can reach",
+      "The physical room where robot operates",
+      "The computer memory used by robot software",
+      "The robot's charging station area"
+    ],
+    "answer": "The volume of space that the robot's end-effector can reach",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "The workspace defines all possible positions that a robot's end-effector can reach, determined by joint limits and link lengths.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_025",
+    "question": "What is force control in robotics?",
+    "options": [
+      "Controlling the forces exerted by robot during contact with objects",
+      "Managing electrical power consumption",
+      "Controlling robot movement speed",
+      "Adjusting motor torque for positioning"
+    ],
+    "answer": "Controlling the forces exerted by robot during contact with objects",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Force control regulates the forces and torques that a robot applies during contact tasks like assembly, polishing, or delicate manipulation.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_026",
+    "question": "What is the purpose of robot calibration?",
+    "options": [
+      "To improve accuracy by correcting systematic errors in robot parameters",
+      "To charge robot batteries",
+      "To update robot software",
+      "To clean robot sensors"
+    ],
+    "answer": "To improve accuracy by correcting systematic errors in robot parameters",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Robot calibration identifies and corrects systematic errors in kinematic parameters, sensor alignments, and other factors affecting accuracy.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_027",
+    "question": "What is swarm robotics?",
+    "options": [
+      "Coordination of multiple simple robots to achieve complex collective behavior",
+      "Robots that move very fast",
+      "Robots designed to catch insects",
+      "A type of industrial robot"
+    ],
+    "answer": "Coordination of multiple simple robots to achieve complex collective behavior",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Swarm robotics studies coordination of multi-robot systems inspired by biological swarms, achieving complex tasks through simple local interactions.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_028",
+    "question": "What is the difference between serial and parallel robot manipulators?",
+    "options": [
+      "Serial has joints in sequence, parallel has multiple chains connecting base to end-effector",
+      "Parallel robots are always faster",
+      "Serial robots are more accurate",
+      "There is no difference"
+    ],
+    "answer": "Serial has joints in sequence, parallel has multiple chains connecting base to end-effector",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Serial manipulators have joints connected in a chain, while parallel manipulators have multiple kinematic chains connecting the base to the end-effector.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_029",
+    "question": "What is robot dynamics?",
+    "options": [
+      "Study of forces and torques required to produce robot motion",
+      "How fast robots can move",
+      "Robot battery life management",
+      "Robot software updates"
+    ],
+    "answer": "Study of forces and torques required to produce robot motion",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Robot dynamics analyzes the relationship between forces/torques applied to robot joints and the resulting motion, considering inertia, friction, and gravity.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_030",
+    "question": "What is the purpose of teach pendants in industrial robotics?",
+    "options": [
+      "Handheld devices for manually programming and controlling robot movements",
+      "Sensors for detecting obstacles",
+      "Power supplies for robots",
+      "Communication devices between robots"
+    ],
+    "answer": "Handheld devices for manually programming and controlling robot movements",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Teach pendants are handheld programming devices that allow operators to manually guide robots through desired motions and program sequences.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_031",
+    "question": "What is compliance in robotic systems?",
+    "options": [
+      "The ability of robot to yield or adapt when encountering forces",
+      "Following safety regulations",
+      "Robot's adherence to programming commands",
+      "Electrical compatibility between components"
+    ],
+    "answer": "The ability of robot to yield or adapt when encountering forces",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Compliance refers to a robot's ability to yield or adapt its motion when encountering external forces, important for safe human-robot interaction.",
+    "topic": "Robotics"
+  },
+  {
+    "id": "robotics_032",
+    "question": "What is the difference between position control and velocity control?",
+    "options": [
+      "Position control targets specific locations, velocity control targets specific speeds",
+      "Velocity control is always more accurate",
+      "Position control only works with rotary joints",
+      "There is no difference"
+    ],
+    "answer": "Position control targets specific locations, velocity control targets specific speeds",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Position control aims to reach and maintain specific positions, while velocity control focuses on achieving and maintaining desired movement speeds.",
+    "topic": "Robotics"
+  }
+]

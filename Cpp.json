@@ -1,0 +1,482 @@
+[
+  {
+    "id": "cpp1",
+    "question": "What is the output of `cout << sizeof('a')` in C++?",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "Depends on the system"
+    ],
+    "answer": "1",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "In C++, a character literal is of type `char`, which is 1 byte in size. This is different from C where character literals are of type `int`.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp2",
+    "question": "What is a reference in C++?",
+    "options": [
+      "A pointer to a memory address",
+      "An alias for an existing variable",
+      "A new copy of a variable",
+      "A constant pointer"
+    ],
+    "answer": "An alias for an existing variable",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "A reference in C++ is an alias for an existing variable. Once a reference is initialized to a variable, it cannot be changed to refer to another variable. References must be initialized when they are declared.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp3",
+    "question": "What is the purpose of the `virtual` keyword in C++?",
+    "options": [
+      "To make a function run faster",
+      "To prevent a function from being overridden",
+      "To enable dynamic polymorphism through function overriding",
+      "To allocate memory on the heap"
+    ],
+    "answer": "To enable dynamic polymorphism through function overriding",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "The `virtual` keyword in C++ is used to create virtual functions which support dynamic polymorphism. When a function is declared as virtual, the most derived version of the function is called based on the actual type of the object, not the type of the pointer/reference.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp4",
+    "question": "What is the difference between `new` and `malloc()` in C++?",
+    "options": [
+      "new calls constructors, malloc() does not",
+      "malloc() is faster than new",
+      "new only works with primitive types, malloc() works with objects",
+      "There is no difference between them"
+    ],
+    "answer": "new calls constructors, malloc() does not",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "`new` is a C++ operator that allocates memory and calls the constructor, while `malloc()` is a C function that only allocates raw memory without calling constructors. Similarly, `delete` calls destructors while `free()` does not.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp5",
+    "question": "What is RAII in C++?",
+    "options": [
+      "Resource Acquisition Is Initialization",
+      "Random Access Iterator Implementation",
+      "Runtime Application Interface Integration",
+      "Recursive Algorithm Implementation Interface"
+    ],
+    "answer": "Resource Acquisition Is Initialization",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "RAII (Resource Acquisition Is Initialization) is a C++ programming technique where resource allocation is tied to object lifetime. Resources are acquired in constructors and released in destructors, ensuring automatic cleanup.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp6",
+    "question": "What is the difference between `const int*` and `int* const`?",
+    "options": [
+      "const int* - pointer to constant int, int* const - constant pointer to int",
+      "They are exactly the same",
+      "const int* is faster than int* const",
+      "const int* works only with integers, int* const works with any type"
+    ],
+    "answer": "const int* - pointer to constant int, int* const - constant pointer to int",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "`const int*` is a pointer to a constant integer (can't modify the value through pointer, but can change what it points to). `int* const` is a constant pointer to an integer (can modify the value, but can't change what it points to).",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp7",
+    "question": "What is function overloading in C++?",
+    "options": [
+      "Having multiple functions with the same name but different parameters",
+      "Making functions run faster by loading them multiple times",
+      "Creating functions that can handle any data type",
+      "Calling one function from inside another function"
+    ],
+    "answer": "Having multiple functions with the same name but different parameters",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Function overloading allows multiple functions to have the same name as long as they have different parameter lists (different number or types of parameters). The compiler determines which function to call based on the arguments provided.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp8",
+    "question": "What is a destructor in C++?",
+    "options": [
+      "A function that creates objects",
+      "A function that automatically cleans up when an object is destroyed",
+      "A function that copies objects",
+      "A function that compares objects"
+    ],
+    "answer": "A function that automatically cleans up when an object is destroyed",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "A destructor is a special member function that is automatically called when an object goes out of scope or is explicitly deleted. It's used to clean up resources, deallocate memory, and perform other cleanup tasks. Destructors have the same name as the class preceded by a tilde (~).",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_009",
+    "question": "What is the difference between new/delete and malloc/free?",
+    "options": [
+      "new/delete call constructors/destructors, malloc/free only allocate/deallocate memory",
+      "malloc/free are faster than new/delete",
+      "new/delete only work with classes",
+      "There is no difference"
+    ],
+    "answer": "new/delete call constructors/destructors, malloc/free only allocate/deallocate memory",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "new/delete are C++ operators that allocate memory AND call constructors/destructors, while malloc/free are C functions that only manage raw memory.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_010",
+    "question": "What is a virtual function?",
+    "options": [
+      "A function that can be overridden in derived classes with dynamic binding",
+      "A function that doesn't exist in memory",
+      "A function declared but not defined",
+      "A function that only works with virtual classes"
+    ],
+    "answer": "A function that can be overridden in derived classes with dynamic binding",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Virtual functions enable polymorphism by allowing derived classes to override base class methods with runtime binding.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_011",
+    "question": "What is the purpose of const correctness?",
+    "options": [
+      "Ensures objects cannot be modified when they shouldn't be",
+      "Makes code run faster",
+      "Prevents compilation errors",
+      "Reduces memory usage"
+    ],
+    "answer": "Ensures objects cannot be modified when they shouldn't be",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Const correctness prevents unintended modifications by marking objects, parameters, and methods as const when they shouldn't change.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_012",
+    "question": "What is a template in C++?",
+    "options": [
+      "A blueprint for creating generic functions or classes",
+      "A predefined code structure",
+      "A design pattern",
+      "A type of inheritance"
+    ],
+    "answer": "A blueprint for creating generic functions or classes",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Templates allow creation of generic functions and classes that work with different data types, enabling code reuse and type safety.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_013",
+    "question": "What is the difference between std::vector and std::array?",
+    "options": [
+      "vector has dynamic size, array has fixed size known at compile time",
+      "array is faster than vector",
+      "vector only stores integers",
+      "There is no difference"
+    ],
+    "answer": "vector has dynamic size, array has fixed size known at compile time",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "std::vector can grow/shrink at runtime, while std::array has a fixed size determined at compile time.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_014",
+    "question": "What is move semantics in C++11?",
+    "options": [
+      "Transferring resources from temporary objects instead of copying",
+      "Moving objects between memory locations",
+      "A way to move code between files",
+      "Changing object types at runtime"
+    ],
+    "answer": "Transferring resources from temporary objects instead of copying",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Move semantics allow efficient transfer of resources from temporary objects using rvalue references, avoiding expensive copies.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_015",
+    "question": "What is the purpose of std::unique_ptr?",
+    "options": [
+      "Provides exclusive ownership of dynamically allocated objects",
+      "Creates unique identifiers for objects",
+      "Ensures objects are unique in memory",
+      "Points to unique memory addresses"
+    ],
+    "answer": "Provides exclusive ownership of dynamically allocated objects",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "std::unique_ptr is a smart pointer that provides exclusive ownership and automatic cleanup of dynamically allocated objects.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_016",
+    "question": "What is function overloading?",
+    "options": [
+      "Defining multiple functions with same name but different parameters",
+      "Calling functions multiple times",
+      "Making functions work with too much data",
+      "Inheriting functions from base classes"
+    ],
+    "answer": "Defining multiple functions with same name but different parameters",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Function overloading allows multiple functions with the same name but different parameter types or counts.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_017",
+    "question": "What is the difference between struct and class in C++?",
+    "options": [
+      "struct members are public by default, class members are private by default",
+      "struct cannot have methods",
+      "class is faster than struct",
+      "struct only works with primitive types"
+    ],
+    "answer": "struct members are public by default, class members are private by default",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "The only difference is default access: struct members are public by default, class members are private by default.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_018",
+    "question": "What is a lambda expression in C++?",
+    "options": [
+      "An anonymous function that can capture variables from enclosing scope",
+      "A mathematical expression",
+      "A type of loop",
+      "A template specialization"
+    ],
+    "answer": "An anonymous function that can capture variables from enclosing scope",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Lambda expressions create anonymous functions with capture clauses to access variables from the enclosing scope.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_019",
+    "question": "What is the purpose of namespace in C++?",
+    "options": [
+      "To avoid naming conflicts by grouping related code",
+      "To improve performance",
+      "To create private variables",
+      "To enable inheritance"
+    ],
+    "answer": "To avoid naming conflicts by grouping related code",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Namespaces group related functions, classes, and variables to avoid naming conflicts and organize code logically.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_020",
+    "question": "What is the difference between pass by value and pass by reference?",
+    "options": [
+      "Pass by value copies the argument, pass by reference uses the original object",
+      "Pass by reference is always slower",
+      "Pass by value only works with primitives",
+      "There is no difference"
+    ],
+    "answer": "Pass by value copies the argument, pass by reference uses the original object",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Pass by value creates a copy of the argument, while pass by reference allows the function to work directly with the original object.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_021",
+    "question": "What is operator overloading?",
+    "options": [
+      "Defining custom behavior for operators when used with user-defined types",
+      "Using operators multiple times",
+      "Making operators work faster",
+      "Combining multiple operators"
+    ],
+    "answer": "Defining custom behavior for operators when used with user-defined types",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Operator overloading allows defining custom behavior for operators (+, -, *, etc.) when used with user-defined classes.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_022",
+    "question": "What is the purpose of std::shared_ptr?",
+    "options": [
+      "Allows multiple pointers to share ownership of the same object",
+      "Shares pointers between different programs",
+      "Creates shared memory segments",
+      "Points to shared library functions"
+    ],
+    "answer": "Allows multiple pointers to share ownership of the same object",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "std::shared_ptr enables shared ownership through reference counting, automatically deleting the object when the last shared_ptr is destroyed.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_023",
+    "question": "What is the auto keyword used for?",
+    "options": [
+      "Automatic type deduction from initializer",
+      "Automatic memory management",
+      "Automatic function generation",
+      "Automatic variable initialization"
+    ],
+    "answer": "Automatic type deduction from initializer",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "The auto keyword tells the compiler to deduce the variable's type from its initializer, reducing verbosity and errors.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_024",
+    "question": "What is exception handling in C++?",
+    "options": [
+      "A mechanism to handle runtime errors using try, catch, and throw",
+      "Handling special cases in algorithms",
+      "Managing exceptional performance",
+      "Dealing with compiler exceptions"
+    ],
+    "answer": "A mechanism to handle runtime errors using try, catch, and throw",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Exception handling provides a structured way to handle runtime errors using try blocks, catch handlers, and throw statements.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_025",
+    "question": "What is the difference between std::map and std::unordered_map?",
+    "options": [
+      "map uses tree structure with O(log n) operations, unordered_map uses hash table with O(1) average",
+      "unordered_map is always faster",
+      "map only stores integers",
+      "There is no difference"
+    ],
+    "answer": "map uses tree structure with O(log n) operations, unordered_map uses hash table with O(1) average",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "std::map maintains sorted order using a balanced tree, while std::unordered_map uses hash tables for faster average access.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_026",
+    "question": "What is a pure virtual function?",
+    "options": [
+      "A virtual function with no implementation, making the class abstract",
+      "A function that only returns pure values",
+      "A virtual function that cannot be overridden",
+      "A function with no side effects"
+    ],
+    "answer": "A virtual function with no implementation, making the class abstract",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Pure virtual functions (= 0) have no implementation in the base class and must be overridden, making the class abstract.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_027",
+    "question": "What is the Rule of Three in C++?",
+    "options": [
+      "If you define destructor, copy constructor, or copy assignment, define all three",
+      "Every class should have exactly three methods",
+      "Use three levels of inheritance maximum",
+      "Declare three access specifiers in every class"
+    ],
+    "answer": "If you define destructor, copy constructor, or copy assignment, define all three",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "The Rule of Three states that if a class needs a custom destructor, copy constructor, or copy assignment operator, it likely needs all three.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_028",
+    "question": "What is std::vector's capacity vs size?",
+    "options": [
+      "Capacity is allocated memory, size is number of elements currently stored",
+      "Size is always equal to capacity",
+      "Capacity refers to maximum possible size",
+      "Size is allocated memory, capacity is used memory"
+    ],
+    "answer": "Capacity is allocated memory, size is number of elements currently stored",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Vector's capacity is the total allocated memory space, while size is the actual number of elements currently stored.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_029",
+    "question": "What is the difference between ++i and i++?",
+    "options": [
+      "++i increments then returns new value, i++ returns old value then increments",
+      "++i is always faster than i++",
+      "i++ only works with integers",
+      "There is no difference"
+    ],
+    "answer": "++i increments then returns new value, i++ returns old value then increments",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Pre-increment (++i) increments first then returns the new value, while post-increment (i++) returns the old value then increments.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_030",
+    "question": "What is a friend function?",
+    "options": [
+      "A non-member function that can access private and protected members",
+      "A function that is friendly to use",
+      "A function shared between classes",
+      "A function that helps other functions"
+    ],
+    "answer": "A non-member function that can access private and protected members",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Friend functions are granted access to private and protected members of a class, despite not being member functions.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_031",
+    "question": "What is std::move() used for?",
+    "options": [
+      "Casts an object to rvalue reference to enable move semantics",
+      "Physically moves objects in memory",
+      "Moves files between directories",
+      "Changes object ownership"
+    ],
+    "answer": "Casts an object to rvalue reference to enable move semantics",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "std::move() casts objects to rvalue references, enabling move constructors and move assignment operators for efficient resource transfer.",
+    "topic": "C++"
+  },
+  {
+    "id": "cpp_032",
+    "question": "What is the difference between stack and heap allocation?",
+    "options": [
+      "Stack is automatic and fast, heap is manual and flexible but slower",
+      "Heap is always faster than stack",
+      "Stack only stores integers",
+      "Heap allocation is automatic"
+    ],
+    "answer": "Stack is automatic and fast, heap is manual and flexible but slower",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Stack allocation is automatic and fast but limited in size, while heap allocation is manual, flexible in size, but requires explicit management.",
+    "topic": "C++"
+  }
+]

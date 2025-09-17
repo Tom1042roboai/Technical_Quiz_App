@@ -1,0 +1,482 @@
+[
+  {
+    "id": "oop_001",
+    "question": "What are the four main principles of Object-Oriented Programming?",
+    "options": [
+      "Abstraction, Encapsulation, Inheritance, Polymorphism",
+      "Classes, Objects, Methods, Variables",
+      "Input, Output, Processing, Storage",
+      "Create, Read, Update, Delete"
+    ],
+    "answer": "Abstraction, Encapsulation, Inheritance, Polymorphism",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "The four pillars of OOP are Abstraction (hiding complexity), Encapsulation (data hiding), Inheritance (code reuse), and Polymorphism (multiple forms).",
+    "topic": "Object Oriented Programming"
+  },
+  {
+    "id": "oop_002",
+    "question": "What is the difference between abstract class and interface?",
+    "options": [
+      "No difference, they are the same",
+      "Abstract class can have implementation, interface cannot (in most languages)",
+      "Interface is faster than abstract class",
+      "Abstract class is used for data, interface for methods"
+    ],
+    "answer": "Abstract class can have implementation, interface cannot (in most languages)",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Abstract classes can contain both abstract and concrete methods with implementation, while interfaces traditionally define only method signatures (though modern languages allow default implementations).",
+    "topic": "Object Oriented Programming"
+  },
+  {
+    "id": "oop_003",
+    "question": "What is method overloading vs method overriding?",
+    "options": [
+      "Overloading is in same class with different parameters, overriding is in subclass with same signature",
+      "They are the same concept",
+      "Overloading is faster than overriding",
+      "Overloading is for static methods, overriding for instance methods"
+    ],
+    "answer": "Overloading is in same class with different parameters, overriding is in subclass with same signature",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Method overloading allows multiple methods with the same name but different parameters in the same class. Method overriding allows a subclass to provide a specific implementation of a method defined in its parent class.",
+    "topic": "Object Oriented Programming"
+  },
+  {
+    "id": "oop_004",
+    "question": "What is the Singleton design pattern?",
+    "options": [
+      "A pattern that allows only one instance of a class",
+      "A pattern for creating multiple objects",
+      "A pattern for inheritance",
+      "A pattern for method overloading"
+    ],
+    "answer": "A pattern that allows only one instance of a class",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "The Singleton pattern ensures that a class has only one instance and provides a global point of access to that instance.",
+    "topic": "Object Oriented Programming"
+  },
+  {
+    "id": "oop_005",
+    "question": "What is composition vs inheritance?",
+    "options": [
+      "Composition is faster than inheritance",
+      "Composition uses 'has-a' relationship, inheritance uses 'is-a' relationship",
+      "They are the same concept",
+      "Composition is only for interfaces"
+    ],
+    "answer": "Composition uses 'has-a' relationship, inheritance uses 'is-a' relationship",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Composition represents a 'has-a' relationship where objects contain other objects, while inheritance represents an 'is-a' relationship where classes extend other classes.",
+    "topic": "Object Oriented Programming"
+  },
+  {
+    "id": "oop_006",
+    "question": "What is the Factory design pattern?",
+    "options": [
+      "A pattern for creating objects without specifying exact classes",
+      "A pattern for destroying objects",
+      "A pattern for copying objects",
+      "A pattern for sorting objects"
+    ],
+    "answer": "A pattern for creating objects without specifying exact classes",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "The Factory pattern provides an interface for creating objects without specifying their exact classes, promoting loose coupling and flexibility.",
+    "topic": "Object Oriented Programming"
+  },
+  {
+    "id": "oop_007",
+    "question": "What is encapsulation?",
+    "options": [
+      "Creating multiple objects",
+      "Hiding internal implementation details and exposing only necessary interfaces",
+      "Inheriting from parent classes",
+      "Overriding methods"
+    ],
+    "answer": "Hiding internal implementation details and exposing only necessary interfaces",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Encapsulation is the bundling of data and methods that operate on that data within a single unit, while hiding the internal implementation details from the outside world.",
+    "topic": "Object Oriented Programming"
+  },
+  {
+    "id": "oop_008",
+    "question": "What is polymorphism?",
+    "options": [
+      "Having multiple constructors",
+      "The ability of objects to take multiple forms and respond differently to the same interface",
+      "Creating multiple instances",
+      "Using multiple inheritance"
+    ],
+    "answer": "The ability of objects to take multiple forms and respond differently to the same interface",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Polymorphism allows objects of different types to be treated as instances of the same type through a common interface, enabling different implementations of the same method.",
+    "topic": "Object Oriented Programming"
+  },
+  {
+    "id": "oop_009",
+    "question": "What is the Liskov Substitution Principle?",
+    "options": [
+      "Objects of derived classes should be substitutable for objects of base classes",
+      "Classes should have only one reason to change",
+      "Depend on abstractions, not concretions",
+      "Classes should be open for extension, closed for modification"
+    ],
+    "answer": "Objects of derived classes should be substitutable for objects of base classes",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "The Liskov Substitution Principle states that objects of a superclass should be replaceable with objects of its subclasses without breaking functionality.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_010",
+    "question": "What is the difference between method overloading and method overriding?",
+    "options": [
+      "Overloading uses same name with different parameters, overriding redefines inherited methods",
+      "Overriding is faster than overloading",
+      "Overloading only works with constructors",
+      "There is no difference"
+    ],
+    "answer": "Overloading uses same name with different parameters, overriding redefines inherited methods",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Method overloading defines multiple methods with the same name but different parameters, while overriding redefines inherited methods in subclasses.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_011",
+    "question": "What is the Singleton design pattern?",
+    "options": [
+      "Ensures a class has only one instance and provides global access to it",
+      "Creates single-use objects",
+      "Uses only one method per class",
+      "Implements single inheritance only"
+    ],
+    "answer": "Ensures a class has only one instance and provides global access to it",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Singleton pattern restricts instantiation of a class to one object and provides a global point of access to that instance.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_012",
+    "question": "What is composition in OOP?",
+    "options": [
+      "Building complex objects by combining simpler objects as components",
+      "Writing complex methods",
+      "Combining multiple classes into one",
+      "Creating composite data types"
+    ],
+    "answer": "Building complex objects by combining simpler objects as components",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Composition creates complex objects by containing instances of other classes as components, representing 'has-a' relationships.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_013",
+    "question": "What is the Open/Closed Principle?",
+    "options": [
+      "Classes should be open for extension but closed for modification",
+      "All class members should be public",
+      "Classes should have both public and private members",
+      "Methods should be either open or closed"
+    ],
+    "answer": "Classes should be open for extension but closed for modification",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "The Open/Closed Principle states that software entities should be open for extension but closed for modification, promoting extensibility without changing existing code.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_014",
+    "question": "What is an interface in OOP?",
+    "options": [
+      "A contract defining methods that implementing classes must provide",
+      "A graphical user interface",
+      "A connection between two classes",
+      "A type of inheritance"
+    ],
+    "answer": "A contract defining methods that implementing classes must provide",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "An interface defines a contract of methods that implementing classes must provide, enabling multiple inheritance of type.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_015",
+    "question": "What is the Factory design pattern?",
+    "options": [
+      "Creates objects without specifying their exact classes",
+      "Manufactures multiple copies of objects",
+      "Optimizes object creation performance",
+      "Manages object lifecycle"
+    ],
+    "answer": "Creates objects without specifying their exact classes",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Factory pattern provides an interface for creating objects without specifying their concrete classes, promoting loose coupling.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_016",
+    "question": "What is dependency injection?",
+    "options": [
+      "Providing dependencies to an object rather than having it create them",
+      "Injecting code into existing classes",
+      "Adding dependencies to project files",
+      "Creating dependent objects automatically"
+    ],
+    "answer": "Providing dependencies to an object rather than having it create them",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Dependency injection provides an object's dependencies from external sources rather than having the object create them internally.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_017",
+    "question": "What is the difference between aggregation and composition?",
+    "options": [
+      "Aggregation is 'has-a' with independent lifecycle, composition is 'part-of' with dependent lifecycle",
+      "Aggregation is faster than composition",
+      "Composition only works with inheritance",
+      "There is no difference"
+    ],
+    "answer": "Aggregation is 'has-a' with independent lifecycle, composition is 'part-of' with dependent lifecycle",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Aggregation represents 'has-a' relationships where parts can exist independently, while composition represents 'part-of' where parts depend on the whole.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_018",
+    "question": "What is the Observer design pattern?",
+    "options": [
+      "Defines one-to-many dependency so when one object changes, dependents are notified",
+      "Observes object creation and destruction",
+      "Monitors system performance",
+      "Watches for security violations"
+    ],
+    "answer": "Defines one-to-many dependency so when one object changes, dependents are notified",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Observer pattern establishes a one-to-many dependency where changes to one object automatically notify and update dependent objects.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_019",
+    "question": "What is the Single Responsibility Principle?",
+    "options": [
+      "A class should have only one reason to change",
+      "Each method should do only one thing",
+      "Use only single inheritance",
+      "Have only one public method per class"
+    ],
+    "answer": "A class should have only one reason to change",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "The Single Responsibility Principle states that a class should have only one reason to change, meaning it should have only one job or responsibility.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_020",
+    "question": "What is polymorphism?",
+    "options": [
+      "The ability of objects to take multiple forms and respond differently to the same interface",
+      "Having multiple constructors",
+      "Using multiple inheritance",
+      "Creating multiple instances of a class"
+    ],
+    "answer": "The ability of objects to take multiple forms and respond differently to the same interface",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Polymorphism allows objects of different types to be treated as instances of the same type through a common interface.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_021",
+    "question": "What is the Strategy design pattern?",
+    "options": [
+      "Defines a family of algorithms and makes them interchangeable",
+      "Plans software development strategies",
+      "Optimizes algorithm performance",
+      "Manages strategic business logic"
+    ],
+    "answer": "Defines a family of algorithms and makes them interchangeable",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Strategy pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable at runtime.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_022",
+    "question": "What is method chaining?",
+    "options": [
+      "Calling multiple methods in sequence on the same object",
+      "Linking methods together with inheritance",
+      "Creating chains of method calls across objects",
+      "Connecting methods with pointers"
+    ],
+    "answer": "Calling multiple methods in sequence on the same object",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Method chaining allows calling multiple methods on the same object in a single statement by returning 'this' or the object itself.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_023",
+    "question": "What is the Decorator design pattern?",
+    "options": [
+      "Adds new functionality to objects dynamically without altering structure",
+      "Decorates classes with visual elements",
+      "Adds metadata to classes",
+      "Improves class appearance in code"
+    ],
+    "answer": "Adds new functionality to objects dynamically without altering structure",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Decorator pattern allows adding new functionality to objects dynamically by wrapping them in decorator objects.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_024",
+    "question": "What is the difference between abstract class and interface?",
+    "options": [
+      "Abstract class can have implementation and state, interface only defines contracts",
+      "Interface is faster than abstract class",
+      "Abstract class only works with inheritance",
+      "There is no difference"
+    ],
+    "answer": "Abstract class can have implementation and state, interface only defines contracts",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Abstract classes can contain both abstract and concrete methods plus state, while interfaces typically only define method contracts.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_025",
+    "question": "What is the Adapter design pattern?",
+    "options": [
+      "Allows incompatible interfaces to work together",
+      "Adapts objects to different environments",
+      "Modifies object behavior",
+      "Connects objects to databases"
+    ],
+    "answer": "Allows incompatible interfaces to work together",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Adapter pattern allows classes with incompatible interfaces to work together by wrapping one interface to match another.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_026",
+    "question": "What is the Dependency Inversion Principle?",
+    "options": [
+      "High-level modules should not depend on low-level modules, both should depend on abstractions",
+      "Dependencies should be inverted in the code",
+      "Lower classes should depend on higher classes",
+      "All dependencies should be removed"
+    ],
+    "answer": "High-level modules should not depend on low-level modules, both should depend on abstractions",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Dependency Inversion Principle states that high-level modules shouldn't depend on low-level modules; both should depend on abstractions.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_027",
+    "question": "What is multiple inheritance?",
+    "options": [
+      "A class inheriting from more than one base class",
+      "Creating multiple instances of a class",
+      "Inheriting the same class multiple times",
+      "Using inheritance in multiple files"
+    ],
+    "answer": "A class inheriting from more than one base class",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Multiple inheritance allows a class to inherit properties and methods from more than one base class simultaneously.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_028",
+    "question": "What is the Interface Segregation Principle?",
+    "options": [
+      "Clients should not be forced to depend on interfaces they don't use",
+      "Interfaces should be separated into different files",
+      "Each interface should have only one method",
+      "Interfaces should be isolated from implementations"
+    ],
+    "answer": "Clients should not be forced to depend on interfaces they don't use",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Interface Segregation Principle advocates for creating specific, focused interfaces rather than large, general-purpose ones.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_029",
+    "question": "What is the difference between composition and inheritance?",
+    "options": [
+      "Composition uses 'has-a' relationships, inheritance uses 'is-a' relationships",
+      "Inheritance is always better than composition",
+      "Composition only works with interfaces",
+      "There is no difference"
+    ],
+    "answer": "Composition uses 'has-a' relationships, inheritance uses 'is-a' relationships",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Composition models 'has-a' relationships by containing other objects, while inheritance models 'is-a' relationships through class hierarchies.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_030",
+    "question": "What is dynamic binding?",
+    "options": [
+      "Method resolution determined at runtime based on object's actual type",
+      "Binding variables at runtime",
+      "Creating dynamic variables",
+      "Connecting objects dynamically"
+    ],
+    "answer": "Method resolution determined at runtime based on object's actual type",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Dynamic binding resolves which method to call at runtime based on the object's actual type, enabling polymorphism.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_031",
+    "question": "What is the Command design pattern?",
+    "options": [
+      "Encapsulates requests as objects to parameterize and queue operations",
+      "Executes system commands",
+      "Controls program execution flow",
+      "Manages command-line interfaces"
+    ],
+    "answer": "Encapsulates requests as objects to parameterize and queue operations",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Command pattern encapsulates requests as objects, allowing parameterization, queuing, logging, and undoable operations.",
+    "topic": "Object Oriented programming"
+  },
+  {
+    "id": "oop_032",
+    "question": "What is the difference between static and instance methods?",
+    "options": [
+      "Static methods belong to class and don't need object instance, instance methods require object",
+      "Instance methods are faster than static methods",
+      "Static methods can only access static variables",
+      "Instance methods cannot access class variables"
+    ],
+    "answer": "Static methods belong to class and don't need object instance, instance methods require object",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Static methods belong to the class itself and can be called without creating an instance, while instance methods require an object to be called.",
+    "topic": "Object Oriented programming"
+  }
+]

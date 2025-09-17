@@ -1,0 +1,482 @@
+[
+  {
+    "id": "numpy1",
+    "question": "What is the purpose of NumPy's `array` compared to Python's built-in lists?",
+    "options": [
+      "NumPy arrays are more memory efficient and faster for numerical operations",
+      "NumPy arrays can only store numbers, while lists can store any data type",
+      "There is no difference, they are interchangeable",
+      "NumPy arrays are slower but more flexible than Python lists"
+    ],
+    "answer": "NumPy arrays are more memory efficient and faster for numerical operations",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "NumPy arrays are stored in contiguous memory blocks and are optimized for numerical operations, making them much faster than Python lists for large datasets and mathematical operations.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy2",
+    "question": "What does the following NumPy code do? `np.arange(2, 10, 2)`",
+    "options": [
+      "Creates an array [0, 2, 4, 6, 8]",
+      "Creates an array [2, 4, 6, 8]",
+      "Creates a 2x2 matrix with values from 1 to 4",
+      "Generates random numbers between 2 and 10"
+    ],
+    "answer": "Creates an array [2, 4, 6, 8]",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "`np.arange(start, stop, step)` generates values from start to stop (exclusive) with the given step size. Here it starts at 2, goes up to (but not including) 10, in steps of 2.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy3",
+    "question": "What is the output of `np.eye(3)`?",
+    "options": [
+      "A 3x3 matrix of ones",
+      "A 3x3 identity matrix",
+      "A 3x3 matrix of zeros",
+      "A 3x3 matrix with random values"
+    ],
+    "answer": "A 3x3 identity matrix",
+    "difficulty": "medium",
+    "time_limit": 15,
+    "explanation": "`np.eye(N)` creates an NxN identity matrix (ones on the diagonal and zeros elsewhere). For N=3, it creates a 3x3 identity matrix.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy4",
+    "question": "What is broadcasting in NumPy?",
+    "options": [
+      "A method to send arrays over a network",
+      "A way to perform element-wise operations on arrays of different shapes",
+      "A technique to compress array data",
+      "A method to convert arrays to different data types"
+    ],
+    "answer": "A way to perform element-wise operations on arrays of different shapes",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Broadcasting allows NumPy to perform element-wise operations on arrays with different shapes by automatically expanding the smaller array to match the larger one's shape, following specific rules.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy5",
+    "question": "What does `np.reshape(arr, (3, 4))` do?",
+    "options": [
+      "Creates a new array with 3 rows and 4 columns using elements from arr",
+      "Adds 3 rows and 4 columns to the existing array",
+      "Multiplies the array by 3 and 4",
+      "Selects elements at positions 3 and 4"
+    ],
+    "answer": "Creates a new array with 3 rows and 4 columns using elements from arr",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "`np.reshape()` returns a new array with the same data but different shape. The original array must have exactly 12 elements (3×4) for this reshape to work.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy6",
+    "question": "What is the difference between `np.zeros()` and `np.empty()`?",
+    "options": [
+      "np.zeros() creates an array of zeros, np.empty() creates uninitialized array",
+      "np.zeros() is faster than np.empty()",
+      "np.empty() creates an array of zeros, np.zeros() creates random values",
+      "There is no difference between them"
+    ],
+    "answer": "np.zeros() creates an array of zeros, np.empty() creates uninitialized array",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "`np.zeros()` creates an array filled with zeros, while `np.empty()` creates an array with uninitialized values (whatever was in memory). `np.empty()` is slightly faster as it doesn't initialize values.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy7",
+    "question": "What does `arr[::2]` do in NumPy array slicing?",
+    "options": [
+      "Selects every 2nd element starting from index 0",
+      "Selects elements at indices 0 and 2",
+      "Divides each element by 2",
+      "Creates a 2D array from 1D array"
+    ],
+    "answer": "Selects every 2nd element starting from index 0",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "The slice `[::2]` means start from beginning, go to end, with step size 2. This selects every second element: indices 0, 2, 4, 6, etc.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy8",
+    "question": "What is the purpose of `np.dot()` function?",
+    "options": [
+      "Creates dots in array visualization",
+      "Computes dot product or matrix multiplication",
+      "Adds decimal points to integers",
+      "Finds the position of elements in array"
+    ],
+    "answer": "Computes dot product or matrix multiplication",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "`np.dot()` computes the dot product of two arrays. For 1D arrays, it's the inner product. For 2D arrays, it performs matrix multiplication.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_009",
+    "question": "What does np.where() function do?",
+    "options": [
+      "Returns elements chosen from x or y depending on condition",
+      "Finds the location of maximum value in array",
+      "Searches for specific values in array",
+      "Creates conditional arrays"
+    ],
+    "answer": "Returns elements chosen from x or y depending on condition",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "np.where(condition, x, y) returns elements from x where condition is True, and elements from y where condition is False.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_010",
+    "question": "What is the difference between np.copy() and array.copy()?",
+    "options": [
+      "No difference, both create deep copies of arrays",
+      "np.copy() creates shallow copy, array.copy() creates deep copy",
+      "array.copy() is faster than np.copy()",
+      "np.copy() only works with 1D arrays"
+    ],
+    "answer": "No difference, both create deep copies of arrays",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Both np.copy() and array.copy() create independent deep copies of arrays, allowing modifications without affecting the original.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_011",
+    "question": "What does np.newaxis do?",
+    "options": [
+      "Adds a new dimension of length 1 to an array",
+      "Creates a new array with random values",
+      "Resets array to zero values",
+      "Changes array data type"
+    ],
+    "answer": "Adds a new dimension of length 1 to an array",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "np.newaxis (alias for None) adds a new axis of length 1, useful for broadcasting and changing array dimensions.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_012",
+    "question": "What is the difference between np.array() and np.asarray()?",
+    "options": [
+      "np.asarray() doesn't copy if input is already an array, np.array() always copies",
+      "np.array() is faster than np.asarray()",
+      "np.asarray() only works with lists",
+      "There is no difference"
+    ],
+    "answer": "np.asarray() doesn't copy if input is already an array, np.array() always copies",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "np.asarray() returns the input if it's already an ndarray, while np.array() always creates a new array copy.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_013",
+    "question": "What does np.squeeze() do?",
+    "options": [
+      "Removes dimensions of length 1 from array shape",
+      "Compresses array data to save memory",
+      "Sorts array elements",
+      "Reduces array precision"
+    ],
+    "answer": "Removes dimensions of length 1 from array shape",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "np.squeeze() removes single-dimensional entries from the shape of an array, e.g., (3,1,4) becomes (3,4).",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_014",
+    "question": "What is the purpose of np.einsum()?",
+    "options": [
+      "Performs Einstein summation notation for tensor operations",
+      "Calculates eigenvalues of matrices",
+      "Sums all elements in an array",
+      "Creates identity matrices"
+    ],
+    "answer": "Performs Einstein summation notation for tensor operations",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "np.einsum() provides a succinct way to express multi-dimensional linear algebraic array operations using Einstein summation convention.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_015",
+    "question": "What does np.argmax() return?",
+    "options": [
+      "Indices of maximum values along specified axis",
+      "Maximum values in the array",
+      "Number of maximum values",
+      "Boolean array indicating maximum positions"
+    ],
+    "answer": "Indices of maximum values along specified axis",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "np.argmax() returns the indices of the maximum values along a specified axis, not the values themselves.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_016",
+    "question": "What is the difference between np.concatenate() and np.stack()?",
+    "options": [
+      "concatenate joins along existing axis, stack creates new axis",
+      "stack is faster than concatenate",
+      "concatenate only works with 1D arrays",
+      "There is no difference"
+    ],
+    "answer": "concatenate joins along existing axis, stack creates new axis",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "np.concatenate() joins arrays along an existing axis, while np.stack() creates a new axis and stacks arrays along it.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_017",
+    "question": "What does np.meshgrid() do?",
+    "options": [
+      "Creates coordinate matrices from coordinate vectors",
+      "Creates a grid pattern in arrays",
+      "Reshapes arrays into grid format",
+      "Calculates mesh density"
+    ],
+    "answer": "Creates coordinate matrices from coordinate vectors",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "np.meshgrid() returns coordinate matrices from coordinate vectors, useful for evaluating functions on a grid.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_018",
+    "question": "What is the purpose of np.clip()?",
+    "options": [
+      "Limits array values to specified minimum and maximum bounds",
+      "Removes elements from array",
+      "Copies part of an array",
+      "Rounds array values"
+    ],
+    "answer": "Limits array values to specified minimum and maximum bounds",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "np.clip() constrains array values to lie within specified minimum and maximum bounds, clipping values outside the range.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_019",
+    "question": "What does np.tile() do?",
+    "options": [
+      "Repeats an array a specified number of times along each axis",
+      "Creates tiled patterns in arrays",
+      "Splits arrays into tiles",
+      "Rotates array elements"
+    ],
+    "answer": "Repeats an array a specified number of times along each axis",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "np.tile() constructs an array by repeating the input array the specified number of times along each axis.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_020",
+    "question": "What is the difference between np.mean() and np.average()?",
+    "options": [
+      "np.average() supports weights, np.mean() does not",
+      "np.mean() is faster than np.average()",
+      "np.average() only works with 1D arrays",
+      "There is no difference"
+    ],
+    "answer": "np.average() supports weights, np.mean() does not",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "np.average() can compute weighted averages when weights are provided, while np.mean() computes simple arithmetic mean.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_021",
+    "question": "What does np.roll() do?",
+    "options": [
+      "Shifts array elements along specified axis by given positions",
+      "Rotates array by 90 degrees",
+      "Rolls array into different shape",
+      "Calculates rolling statistics"
+    ],
+    "answer": "Shifts array elements along specified axis by given positions",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "np.roll() shifts array elements along a specified axis, with elements that roll beyond the last position wrapping around to the first.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_022",
+    "question": "What is the purpose of np.gradient()?",
+    "options": [
+      "Computes numerical gradient using central differences",
+      "Creates color gradients for visualization",
+      "Calculates slope of linear functions",
+      "Optimizes array operations"
+    ],
+    "answer": "Computes numerical gradient using central differences",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "np.gradient() computes numerical gradients using central differences in the interior points and one-sided differences at the boundaries.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_023",
+    "question": "What does np.digitize() do?",
+    "options": [
+      "Returns indices of bins to which each input value belongs",
+      "Converts arrays to digital format",
+      "Rounds values to specified decimal places",
+      "Creates binary representations"
+    ],
+    "answer": "Returns indices of bins to which each input value belongs",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "np.digitize() returns the indices of the bins to which each value in the input array belongs, useful for histogram-like operations.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_024",
+    "question": "What is the difference between np.any() and np.all()?",
+    "options": [
+      "np.any() returns True if any element is True, np.all() returns True if all elements are True",
+      "np.all() is faster than np.any()",
+      "np.any() works with numbers, np.all() works with booleans",
+      "There is no difference"
+    ],
+    "answer": "np.any() returns True if any element is True, np.all() returns True if all elements are True",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "np.any() tests whether any array element is True, while np.all() tests whether all array elements are True.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_025",
+    "question": "What does np.percentile() calculate?",
+    "options": [
+      "The value below which a given percentage of data falls",
+      "The percentage of non-zero elements",
+      "The percentage change between array elements",
+      "The percentage of memory used by array"
+    ],
+    "answer": "The value below which a given percentage of data falls",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "np.percentile() computes the q-th percentile of data, the value below which q percent of the data falls.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_026",
+    "question": "What is the purpose of np.pad()?",
+    "options": [
+      "Adds padding values around array edges",
+      "Removes padding from arrays",
+      "Compresses array data",
+      "Aligns arrays for operations"
+    ],
+    "answer": "Adds padding values around array edges",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "np.pad() pads arrays with specified values around the edges, useful for signal processing and image operations.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_027",
+    "question": "What does np.diff() compute?",
+    "options": [
+      "Discrete differences between consecutive elements",
+      "Difference between maximum and minimum values",
+      "Comparison between two arrays",
+      "Standard deviation of array"
+    ],
+    "answer": "Discrete differences between consecutive elements",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "np.diff() calculates discrete differences between consecutive elements along a specified axis, useful for derivatives.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_028",
+    "question": "What is the purpose of np.histogram()?",
+    "options": [
+      "Computes histogram of data values and bin edges",
+      "Creates visual histograms",
+      "Sorts data into categories",
+      "Calculates frequency distributions"
+    ],
+    "answer": "Computes histogram of data values and bin edges",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "np.histogram() computes the histogram of a dataset, returning both the histogram values and the bin edges.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_029",
+    "question": "What does np.corrcoef() calculate?",
+    "options": [
+      "Pearson correlation coefficients between variables",
+      "Coefficient of variation",
+      "Regression coefficients",
+      "Fourier coefficients"
+    ],
+    "answer": "Pearson correlation coefficients between variables",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "np.corrcoef() returns the Pearson correlation coefficient matrix, measuring linear relationships between variables.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_030",
+    "question": "What is the difference between np.flatten() and np.ravel()?",
+    "options": [
+      "flatten() always returns copy, ravel() returns view when possible",
+      "ravel() is slower than flatten()",
+      "flatten() only works with 2D arrays",
+      "There is no difference"
+    ],
+    "answer": "flatten() always returns copy, ravel() returns view when possible",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "flatten() always returns a copy of the array, while ravel() returns a view when possible, making it more memory efficient.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_031",
+    "question": "What does np.searchsorted() do?",
+    "options": [
+      "Finds indices where elements should be inserted to maintain sorted order",
+      "Searches for specific values in sorted arrays",
+      "Sorts array and returns indices",
+      "Binary search for exact matches"
+    ],
+    "answer": "Finds indices where elements should be inserted to maintain sorted order",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "np.searchsorted() finds the indices where elements should be inserted into a sorted array to maintain the sorted order.",
+    "topic": "Numpy"
+  },
+  {
+    "id": "numpy_032",
+    "question": "What is the purpose of np.memmap?",
+    "options": [
+      "Creates memory-mapped arrays for large datasets that don't fit in RAM",
+      "Maps array memory to GPU",
+      "Creates memory usage reports",
+      "Optimizes memory allocation"
+    ],
+    "answer": "Creates memory-mapped arrays for large datasets that don't fit in RAM",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "np.memmap creates memory-mapped arrays stored on disk, allowing work with datasets larger than available RAM by loading portions as needed.",
+    "topic": "Numpy"
+  }
+]

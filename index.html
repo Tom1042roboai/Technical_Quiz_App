@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Technical Quiz App</h1>
+        <p>Select the topics you want to include in your quiz:</p>
+        
+        <div class="topics-container">
+            <div class="topic">
+                <input type="checkbox" id="ml" value="Machine Learning" checked>
+                <label for="ml">Machine Learning</label>
+            </div>
+            <div class="topic">
+                <input type="checkbox" id="dl" value="Deep Learning" checked>
+                <label for="dl">Deep Learning</label>
+            </div>
+            <div class="topic">
+                <input type="checkbox" id="rl" value="Reinforcement Learning" checked>
+                <label for="rl">Reinforcement Learning</label>
+            </div>
+            <div class="topic">
+                <input type="checkbox" id="robotics" value="Robotics" checked>
+                <label for="robotics">Robotics</label>
+            </div>
+            <div class="topic">
+                <input type="checkbox" id="dsa" value="Data Structure and Algorithms" checked>
+                <label for="dsa">Data Structure and Algorithms</label>
+            </div>
+            <div class="topic">
+                <input type="checkbox" id="oop" value="Object Oriented programming" checked>
+                <label for="oop">Object Oriented Programming</label>
+            </div>
+            <div class="topic">
+                <input type="checkbox" id="python" value="Python" checked>
+                <label for="python">Python</label>
+            </div>
+            <div class="topic">
+                <input type="checkbox" id="numpy" value="Numpy" checked>
+                <label for="numpy">Numpy</label>
+            </div>
+            <div class="topic">
+                <input type="checkbox" id="pytorch" value="Pytorch" checked>
+                <label for="pytorch">Pytorch</label>
+            </div>
+            <div class="topic">
+                <input type="checkbox" id="cpp" value="C++" checked>
+                <label for="cpp">C++</label>
+            </div>
+            <div class="topic">
+                <input type="checkbox" id="distributed" value="Distributed Systems" checked>
+                <label for="distributed">Distributed Systems</label>
+            </div>
+            <div class="topic">
+                <input type="checkbox" id="maths" value="Maths" checked>
+                <label for="maths">Maths</label>
+            </div>
+        </div>
+        
+        <div class="control-buttons">
+            <button id="deselectAllBtn" class="control-btn">Deselect All</button>
+            <button id="startBtn" class="start-btn">Start Quiz</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

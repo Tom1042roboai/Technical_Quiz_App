@@ -1,0 +1,482 @@
+[
+  {
+    "id": "maths_1",
+    "question": "In linear algebra, what is the result of the dot product of two perpendicular vectors?",
+    "options": [
+      "1",
+      "0",
+      "The magnitude of the first vector",
+      "The magnitude of the second vector"
+    ],
+    "answer": "0",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "The dot product of two perpendicular vectors is zero because the cosine of 90 degrees is zero, and the dot product formula is |A||B|cos(θ).",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_2",
+    "question": "Which matrix operation is commonly used in neural networks for forward propagation?",
+    "options": [
+      "Matrix addition",
+      "Matrix multiplication",
+      "Matrix transposition",
+      "Matrix inversion"
+    ],
+    "answer": "Matrix multiplication",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Matrix multiplication is fundamental in neural networks for forward propagation, where input data is multiplied by weight matrices to produce outputs.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_3",
+    "question": "What is the purpose of the gradient in gradient descent optimization?",
+    "options": [
+      "To calculate the exact solution directly",
+      "To determine the direction of steepest ascent",
+      "To determine the direction of steepest descent",
+      "To normalize the input features"
+    ],
+    "answer": "To determine the direction of steepest descent",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "The gradient points in the direction of steepest ascent. In gradient descent, we move in the opposite direction (negative gradient) to minimize the loss function.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_4",
+    "question": "Which numerical method is commonly used to solve systems of linear equations in robotics?",
+    "options": [
+      "Newton-Raphson method",
+      "Gaussian elimination",
+      "Euler's method",
+      "Runge-Kutta method"
+    ],
+    "answer": "Gaussian elimination",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Gaussian elimination is widely used in robotics for solving systems of linear equations, which frequently arise in kinematics and control problems.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_5",
+    "question": "In probability theory, what does Bayes' Theorem describe?",
+    "options": [
+      "The relationship between joint and conditional probabilities",
+      "The central limit theorem",
+      "The law of large numbers",
+      "The probability of independent events"
+    ],
+    "answer": "The relationship between joint and conditional probabilities",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Bayes' Theorem describes how to update the probability of a hypothesis as more evidence becomes available, relating the conditional and marginal probabilities of random events.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_6",
+    "question": "What is the purpose of the Jacobian matrix in robotics?",
+    "options": [
+      "To represent the relationship between joint velocities and end-effector velocity",
+      "To calculate the inverse kinematics of a robot",
+      "To determine the robot's workspace",
+      "To optimize the robot's trajectory"
+    ],
+    "answer": "To represent the relationship between joint velocities and end-effector velocity",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "The Jacobian matrix in robotics represents the relationship between the joint velocities and the end-effector's linear and angular velocities in Cartesian space.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_7",
+    "question": "Which of the following is NOT a property of a positive definite matrix?",
+    "options": [
+      "All eigenvalues are positive",
+      "It is always symmetric",
+      "It has a unique Cholesky decomposition",
+      "Its determinant is always zero"
+    ],
+    "answer": "Its determinant is always zero",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "A positive definite matrix must have a positive determinant, not zero. A zero determinant would make it singular, which contradicts the definition of positive definiteness.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_8",
+    "question": "What is the main advantage of using quaternions over Euler angles in 3D rotations?",
+    "options": [
+      "They require less memory",
+      "They avoid gimbal lock",
+      "They are easier to understand",
+      "They are faster to compute"
+    ],
+    "answer": "They avoid gimbal lock",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Quaternions avoid the gimbal lock problem that occurs with Euler angles, where a degree of freedom is lost in certain configurations.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_9",
+    "question": "In optimization, what is the purpose of the Lagrange multiplier?",
+    "options": [
+      "To maximize the objective function",
+      "To convert a constrained problem into an unconstrained one",
+      "To find the global minimum",
+      "To normalize the gradient"
+    ],
+    "answer": "To convert a constrained problem into an unconstrained one",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Lagrange multipliers are used to find the extrema of a function subject to equality constraints by converting the constrained problem into an unconstrained one.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_10",
+    "question": "What is the significance of the Hessian matrix in optimization?",
+    "options": [
+      "It provides first-order information about the function",
+      "It determines the step size in gradient descent",
+      "It provides second-order information about the function's curvature",
+      "It normalizes the input features"
+    ],
+    "answer": "It provides second-order information about the function's curvature",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "The Hessian matrix contains second-order partial derivatives of a function and provides information about its curvature, which is crucial for second-order optimization methods.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_11",
+    "question": "What is the purpose of the singular value decomposition (SVD) in linear algebra?",
+    "options": [
+      "To find the inverse of a matrix",
+      "To decompose a matrix into three component matrices",
+      "To compute the determinant",
+      "To solve systems of linear equations"
+    ],
+    "answer": "To decompose a matrix into three component matrices",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "SVD decomposes a matrix into three matrices: U, Σ, and V*, where U and V are orthogonal matrices and Σ is a diagonal matrix of singular values.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_12",
+    "question": "In probability theory, what does the Central Limit Theorem state?",
+    "options": [
+      "The sample mean is an unbiased estimator of the population mean",
+      "The sum of independent random variables tends toward a normal distribution",
+      "The probability of an event is between 0 and 1",
+      "The variance of a sum is the sum of variances for independent variables"
+    ],
+    "answer": "The sum of independent random variables tends toward a normal distribution",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "The Central Limit Theorem states that the sum (or average) of a large number of independent, identically distributed random variables will be approximately normally distributed, regardless of the underlying distribution.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_13",
+    "question": "What is the purpose of the Kalman filter in robotics?",
+    "options": [
+      "To plan optimal paths",
+      "To estimate the state of a dynamic system",
+      "To control joint movements",
+      "To process visual data"
+    ],
+    "answer": "To estimate the state of a dynamic system",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "The Kalman filter is an algorithm that uses a series of measurements observed over time, containing statistical noise, to produce estimates of unknown variables that tend to be more precise than those based on a single measurement alone.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_14",
+    "question": "What is the determinant of a 2x2 matrix [[a, b], [c, d]]?",
+    "options": [
+      "a + d - b - c",
+      "ad - bc",
+      "ac - bd",
+      "ab - cd"
+    ],
+    "answer": "ad - bc",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "The determinant of a 2x2 matrix [[a, b], [c, d]] is calculated as ad - bc, which represents the scaling factor of the linear transformation.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_15",
+    "question": "What is the rank of a matrix?",
+    "options": [
+      "The number of rows in the matrix",
+      "The number of columns in the matrix",
+      "The maximum number of linearly independent rows or columns",
+      "The trace of the matrix"
+    ],
+    "answer": "The maximum number of linearly independent rows or columns",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "The rank of a matrix is the maximum number of linearly independent row vectors (or column vectors) in the matrix, indicating the dimension of the vector space spanned by its rows or columns.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_16",
+    "question": "What is the purpose of eigenvalues and eigenvectors in linear algebra?",
+    "options": [
+      "To solve systems of linear equations",
+      "To find directions that remain unchanged under linear transformation",
+      "To compute matrix inverses",
+      "To calculate matrix determinants"
+    ],
+    "answer": "To find directions that remain unchanged under linear transformation",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Eigenvalues and eigenvectors identify special directions where a linear transformation only scales the vector without changing its direction, which is fundamental in many applications like PCA.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_17",
+    "question": "What is the derivative of sin(x) with respect to x?",
+    "options": [
+      "cos(x)",
+      "-cos(x)",
+      "sin(x)",
+      "-sin(x)"
+    ],
+    "answer": "cos(x)",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "The derivative of sin(x) with respect to x is cos(x), which is a fundamental derivative rule in calculus.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_18",
+    "question": "What is the purpose of the chain rule in calculus?",
+    "options": [
+      "To find the derivative of composite functions",
+      "To integrate complex functions",
+      "To solve differential equations",
+      "To find critical points"
+    ],
+    "answer": "To find the derivative of composite functions",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "The chain rule allows us to find the derivative of composite functions by multiplying the derivatives of the outer and inner functions.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_19",
+    "question": "What is the second derivative test used for in optimization?",
+    "options": [
+      "To find the first derivative",
+      "To determine if a critical point is a maximum, minimum, or saddle point",
+      "To solve for the roots of a function",
+      "To calculate the area under a curve"
+    ],
+    "answer": "To determine if a critical point is a maximum, minimum, or saddle point",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "The second derivative test examines the concavity at critical points to classify them as local maxima (negative), local minima (positive), or inconclusive (zero).",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_20",
+    "question": "What is the variance of a random variable?",
+    "options": [
+      "The expected value of the variable",
+      "The square root of the standard deviation",
+      "The expected value of the squared deviation from the mean",
+      "The median of the distribution"
+    ],
+    "answer": "The expected value of the squared deviation from the mean",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Variance measures the spread of a distribution and is defined as the expected value of the squared deviation from the mean: Var(X) = E[(X - μ)²].",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_21",
+    "question": "What is the difference between correlation and covariance?",
+    "options": [
+      "Correlation is normalized, covariance is not",
+      "Covariance is normalized, correlation is not",
+      "They are the same thing",
+      "Correlation measures linear relationships, covariance measures non-linear"
+    ],
+    "answer": "Correlation is normalized, covariance is not",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Correlation is the normalized version of covariance, ranging from -1 to 1, making it easier to interpret the strength of linear relationships between variables.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_22",
+    "question": "What is the purpose of the normal distribution in statistics?",
+    "options": [
+      "It only applies to discrete variables",
+      "It describes many natural phenomena and is central to statistical inference",
+      "It has infinite variance",
+      "It cannot be used in hypothesis testing"
+    ],
+    "answer": "It describes many natural phenomena and is central to statistical inference",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "The normal distribution is fundamental in statistics because it describes many natural phenomena and serves as the basis for many statistical inference procedures.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_23",
+    "question": "What is the purpose of Principal Component Analysis (PCA)?",
+    "options": [
+      "To increase the dimensionality of data",
+      "To reduce dimensionality while preserving maximum variance",
+      "To classify data points",
+      "To cluster similar data points"
+    ],
+    "answer": "To reduce dimensionality while preserving maximum variance",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "PCA reduces the dimensionality of data by finding the principal components that capture the maximum variance in the data, using eigenvalue decomposition of the covariance matrix.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_24",
+    "question": "What is the condition number of a matrix?",
+    "options": [
+      "The ratio of the largest to smallest eigenvalue",
+      "The determinant of the matrix",
+      "The trace of the matrix",
+      "The number of non-zero elements"
+    ],
+    "answer": "The ratio of the largest to smallest eigenvalue",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "The condition number measures how sensitive a matrix is to numerical errors and is defined as the ratio of the largest to smallest singular value (or eigenvalue for symmetric matrices).",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_25",
+    "question": "What is the purpose of the L2 norm (Euclidean norm) of a vector?",
+    "options": [
+      "To find the angle between vectors",
+      "To measure the length or magnitude of the vector",
+      "To normalize the vector to unit length",
+      "To compute the dot product"
+    ],
+    "answer": "To measure the length or magnitude of the vector",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "The L2 norm (Euclidean norm) measures the length or magnitude of a vector, calculated as the square root of the sum of squared components.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_26",
+    "question": "What is the purpose of the cross product in 3D vector operations?",
+    "options": [
+      "To find a vector perpendicular to both input vectors",
+      "To calculate the angle between vectors",
+      "To find the projection of one vector onto another",
+      "To compute the magnitude of vectors"
+    ],
+    "answer": "To find a vector perpendicular to both input vectors",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "The cross product of two 3D vectors produces a third vector that is perpendicular to both input vectors, with magnitude equal to the area of the parallelogram they span.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_27",
+    "question": "What is the purpose of the QR decomposition?",
+    "options": [
+      "To solve least squares problems",
+      "To find eigenvalues",
+      "To compute matrix inverses",
+      "To calculate determinants"
+    ],
+    "answer": "To solve least squares problems",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "QR decomposition factors a matrix into an orthogonal matrix Q and an upper triangular matrix R, and is particularly useful for solving least squares problems numerically.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_28",
+    "question": "What is the maximum likelihood estimation (MLE) principle?",
+    "options": [
+      "Finding parameters that minimize the likelihood function",
+      "Finding parameters that maximize the likelihood of observed data",
+      "Finding the mean of the data",
+      "Finding the median of the data"
+    ],
+    "answer": "Finding parameters that maximize the likelihood of observed data",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Maximum likelihood estimation finds the parameter values that make the observed data most probable under the assumed statistical model.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_29",
+    "question": "What is the purpose of the sigmoid function in machine learning?",
+    "options": [
+      "To map any real number to a value between 0 and 1",
+      "To compute derivatives",
+      "To normalize input data",
+      "To calculate loss functions"
+    ],
+    "answer": "To map any real number to a value between 0 and 1",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "The sigmoid function maps any real-valued number to a value between 0 and 1, making it useful for binary classification and as an activation function.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_30",
+    "question": "What is the purpose of the Monte Carlo method?",
+    "options": [
+      "To solve differential equations analytically",
+      "To use random sampling to solve mathematical problems",
+      "To find exact solutions to optimization problems",
+      "To compute matrix inverses"
+    ],
+    "answer": "To use random sampling to solve mathematical problems",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Monte Carlo methods use random sampling to obtain numerical results for mathematical problems that might be deterministic in principle, especially useful for high-dimensional integration.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_31",
+    "question": "What is the purpose of the Fourier transform?",
+    "options": [
+      "To convert time domain signals to frequency domain",
+      "To solve differential equations",
+      "To compute matrix eigenvalues",
+      "To normalize probability distributions"
+    ],
+    "answer": "To convert time domain signals to frequency domain",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "The Fourier transform decomposes a function of time into its constituent frequencies, converting from time domain to frequency domain representation.",
+    "topic": "Maths"
+  },
+  {
+    "id": "maths_32",
+    "question": "What is the purpose of the gradient descent algorithm?",
+    "options": [
+      "To find the maximum of a function",
+      "To find the minimum of a function by iteratively moving in the direction of steepest descent",
+      "To solve linear equations",
+      "To compute eigenvalues"
+    ],
+    "answer": "To find the minimum of a function by iteratively moving in the direction of steepest descent",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Gradient descent is an optimization algorithm that finds the minimum of a function by iteratively moving in the direction opposite to the gradient (steepest descent).",
+    "topic": "Maths"
+  }
+]

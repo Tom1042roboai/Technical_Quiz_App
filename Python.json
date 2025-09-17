@@ -1,0 +1,472 @@
+[
+  {
+    "id": "python1",
+    "question": "What is the output of `print(2 ** 3 ** 2)` in Python?",
+    "options": ["64", "512", "9", "SyntaxError"],
+    "answer": "512",
+    "difficulty": "medium",
+    "time_limit": 15,
+    "explanation": "The exponentiation operator ** is right-associative in Python, so `2 ** 3 ** 2` is evaluated as `2 ** (3 ** 2)` which equals 2^9 = 512.",
+    "topic": "Python"
+  },
+  {
+    "id": "python2",
+    "question": "Which of the following is NOT a valid Python variable name?",
+    "options": ["_private_var", "2nd_var", "var_name", "varName2"],
+    "answer": "2nd_var",
+    "difficulty": "easy",
+    "time_limit": 10,
+    "explanation": "Variable names in Python cannot start with a number. They must start with a letter or underscore, followed by any combination of letters, numbers, or underscores.",
+    "topic": "Python"
+  },
+  {
+    "id": "python3",
+    "question": "What does the `@property` decorator do in Python?",
+    "options": [
+      "Marks a method as static",
+      "Turns a method into a class method",
+      "Turns a method into a read-only property",
+      "Makes a method private"
+    ],
+    "answer": "Turns a method into a read-only property",
+    "difficulty": "hard",
+    "time_limit": 20,
+    "explanation": "The @property decorator allows you to define a method that can be accessed like an attribute, providing a way to implement getters, setters, and deleters in a Pythonic way.",
+    "topic": "Python"
+  },
+  {
+    "id": "python4",
+    "question": "What is the difference between `is` and `==` in Python?",
+    "options": [
+      "`is` checks for equality, `==` checks for identity",
+      "`is` checks for identity (same object), `==` checks for equality (same value)",
+      "There is no difference, they are interchangeable",
+      "`is` is used for numbers, `==` for strings"
+    ],
+    "answer": "`is` checks for identity (same object), `==` checks for equality (same value)",
+    "difficulty": "medium",
+    "time_limit": 15,
+    "explanation": "`is` checks if two variables reference the same object in memory, while `==` checks if the values of the objects are equal. For example, `[1,2] is [1,2]` is False, but `[1,2] == [1,2]` is True.",
+    "topic": "Python"
+  },
+  {
+    "id": "python5",
+    "question": "What is the output of `print([i for i in range(5) if i % 2 == 0])`?",
+    "options": [
+      "[0, 1, 2, 3, 4]",
+      "[0, 2, 4]",
+      "[1, 3]",
+      "[False, True, False, True, False]"
+    ],
+    "answer": "[0, 2, 4]",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "This is a list comprehension that creates a list of numbers from 0 to 4 (inclusive) but only includes numbers that are divisible by 2 with no remainder (i.e., even numbers).",
+    "topic": "Python"
+  },
+  {
+    "id": "python6",
+    "question": "What is the purpose of the `__init__.py` file in a Python package?",
+    "options": [
+      "It's required to run any Python script",
+      "It's used to initialize Python interpreter",
+      "It makes a directory a Python package and can contain package initialization code",
+      "It's used to declare global variables"
+    ],
+    "answer": "It makes a directory a Python package and can contain package initialization code",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "The `__init__.py` file is used to mark a directory as a Python package. It can be empty or can contain initialization code for the package. In Python 3.3+, it's not strictly required (implicit namespace packages), but it's still commonly used for backward compatibility and to include package initialization code.",
+    "topic": "Python"
+  },
+  {
+    "id": "python7",
+    "question": "What is the difference between `list` and `tuple` in Python?",
+    "options": [
+      "Lists are immutable, tuples are mutable",
+      "Lists can store only one data type, tuples can store multiple",
+      "Lists are mutable, tuples are immutable",
+      "There is no difference"
+    ],
+    "answer": "Lists are mutable, tuples are immutable",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "The main difference is that lists are mutable (can be modified after creation) while tuples are immutable (cannot be modified after creation). This makes tuples faster and safer for data that shouldn't change.",
+    "topic": "Python"
+  },
+  {
+    "id": "python8",
+    "question": "What is the output of `print('Hello, ' + 'World!' * 2)`?",
+    "options": [
+      "Hello, World!World!",
+      "Hello, World!2",
+      "TypeError",
+      "Hello, World! World!"
+    ],
+    "answer": "Hello, World!World!",
+    "difficulty": "easy",
+    "time_limit": 10,
+    "explanation": "The * operator with strings performs repetition. 'World!' * 2 results in 'World!World!', which is then concatenated with 'Hello, '.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_009",
+    "question": "What is the difference between `==` and `is` in Python?",
+    "options": [
+      "== compares values, is compares object identity",
+      "== is faster than is",
+      "is compares values, == compares identity",
+      "There is no difference"
+    ],
+    "answer": "== compares values, is compares object identity",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "== checks if two objects have the same value, while 'is' checks if two variables refer to the same object in memory.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_010",
+    "question": "What is a Python decorator?",
+    "options": [
+      "A function that modifies or extends another function's behavior",
+      "A way to create classes",
+      "A method to handle exceptions",
+      "A type of loop in Python"
+    ],
+    "answer": "A function that modifies or extends another function's behavior",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Decorators are functions that take another function as input and extend or modify its behavior without permanently modifying the original function.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_011",
+    "question": "What is the Global Interpreter Lock (GIL) in Python?",
+    "options": [
+      "A mutex that prevents multiple threads from executing Python code simultaneously",
+      "A security feature for protecting code",
+      "A way to optimize memory usage",
+      "A method for handling exceptions"
+    ],
+    "answer": "A mutex that prevents multiple threads from executing Python code simultaneously",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "The GIL is a mutex that protects access to Python objects, preventing multiple native threads from executing Python bytecodes at once.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_012",
+    "question": "What is the difference between `append()` and `extend()` for lists?",
+    "options": [
+      "append() adds single element, extend() adds multiple elements from iterable",
+      "extend() is faster than append()",
+      "append() adds multiple elements, extend() adds single element",
+      "There is no difference"
+    ],
+    "answer": "append() adds single element, extend() adds multiple elements from iterable",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "append() adds its argument as a single element to the end of the list, while extend() adds each element from an iterable to the list.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_013",
+    "question": "What is a Python generator?",
+    "options": [
+      "A function that yields values one at a time using yield keyword",
+      "A way to create random numbers",
+      "A method to generate classes",
+      "A tool for creating decorators"
+    ],
+    "answer": "A function that yields values one at a time using yield keyword",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Generators are functions that use 'yield' to produce a sequence of values lazily, maintaining state between calls and saving memory.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_014",
+    "question": "What is the purpose of `*args` and `**kwargs`?",
+    "options": [
+      "*args for variable positional arguments, **kwargs for variable keyword arguments",
+      "*args for keywords, **kwargs for positions",
+      "They are used for multiplication",
+      "They are error handling mechanisms"
+    ],
+    "answer": "*args for variable positional arguments, **kwargs for variable keyword arguments",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "*args allows a function to accept any number of positional arguments, **kwargs allows any number of keyword arguments.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_015",
+    "question": "What is the difference between shallow and deep copy?",
+    "options": [
+      "Shallow copy copies references, deep copy creates new objects recursively",
+      "Deep copy is faster than shallow copy",
+      "Shallow copy creates new objects, deep copy copies references",
+      "There is no difference"
+    ],
+    "answer": "Shallow copy copies references, deep copy creates new objects recursively",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Shallow copy creates a new object but inserts references to objects in the original. Deep copy creates new objects recursively.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_016",
+    "question": "What is a context manager in Python?",
+    "options": [
+      "An object that defines methods for use with 'with' statement",
+      "A way to manage memory",
+      "A method for handling threads",
+      "A type of exception handler"
+    ],
+    "answer": "An object that defines methods for use with 'with' statement",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Context managers define __enter__ and __exit__ methods for use with 'with' statements, ensuring proper resource management.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_017",
+    "question": "What is the difference between `range()` and `xrange()` in Python?",
+    "options": [
+      "range() returns list (Python 2), xrange() returns iterator; Python 3 only has range()",
+      "xrange() is faster in all Python versions",
+      "range() is for integers, xrange() is for floats",
+      "They are exactly the same"
+    ],
+    "answer": "range() returns list (Python 2), xrange() returns iterator; Python 3 only has range()",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "In Python 2, range() returned a list while xrange() returned an iterator. Python 3's range() behaves like Python 2's xrange().",
+    "topic": "Python"
+  },
+  {
+    "id": "python_018",
+    "question": "What is monkey patching in Python?",
+    "options": [
+      "Dynamically modifying classes or modules at runtime",
+      "A debugging technique",
+      "A way to optimize code",
+      "A method for error handling"
+    ],
+    "answer": "Dynamically modifying classes or modules at runtime",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Monkey patching allows you to dynamically modify existing classes or modules at runtime by adding, modifying, or deleting attributes.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_019",
+    "question": "What is the purpose of `__init__.py` files?",
+    "options": [
+      "To mark directories as Python packages and control package initialization",
+      "To store configuration settings",
+      "To handle imports automatically",
+      "To define main functions"
+    ],
+    "answer": "To mark directories as Python packages and control package initialization",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "__init__.py files make directories into Python packages and can contain initialization code that runs when the package is imported.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_020",
+    "question": "What is the difference between `staticmethod` and `classmethod`?",
+    "options": [
+      "staticmethod doesn't receive class/instance, classmethod receives class as first argument",
+      "staticmethod is faster than classmethod",
+      "classmethod doesn't receive any arguments",
+      "There is no difference"
+    ],
+    "answer": "staticmethod doesn't receive class/instance, classmethod receives class as first argument",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "@staticmethod creates methods that don't receive implicit first argument. @classmethod methods receive the class as first argument (cls).",
+    "topic": "Python"
+  },
+  {
+    "id": "python_021",
+    "question": "What is the purpose of `enumerate()` function?",
+    "options": [
+      "Returns iterator with index-value pairs from an iterable",
+      "Counts the number of elements in a list",
+      "Sorts elements in ascending order",
+      "Removes duplicate elements"
+    ],
+    "answer": "Returns iterator with index-value pairs from an iterable",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "enumerate() returns an iterator that produces tuples containing the index and value for each element in the iterable.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_022",
+    "question": "What is the difference between `break` and `continue`?",
+    "options": [
+      "break exits the loop, continue skips to next iteration",
+      "continue exits the loop, break skips to next iteration",
+      "They both exit the loop",
+      "They both skip to next iteration"
+    ],
+    "answer": "break exits the loop, continue skips to next iteration",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "'break' terminates the loop entirely, while 'continue' skips the rest of the current iteration and moves to the next one.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_023",
+    "question": "What is the purpose of `zip()` function?",
+    "options": [
+      "Combines multiple iterables element-wise into tuples",
+      "Compresses files",
+      "Sorts multiple lists",
+      "Removes elements from lists"
+    ],
+    "answer": "Combines multiple iterables element-wise into tuples",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "zip() takes multiple iterables and returns an iterator of tuples where each tuple contains elements from the same position in each iterable.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_024",
+    "question": "What is a Python metaclass?",
+    "options": [
+      "A class whose instances are classes themselves",
+      "A parent class for all classes",
+      "A method for creating objects",
+      "A way to handle exceptions"
+    ],
+    "answer": "A class whose instances are classes themselves",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Metaclasses are classes whose instances are classes. They define how classes are constructed and can customize class creation behavior.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_025",
+    "question": "What is the difference between `map()` and list comprehension?",
+    "options": [
+      "map() returns iterator, list comprehension returns list; both apply function to elements",
+      "map() is always faster than list comprehension",
+      "List comprehension can't handle functions",
+      "There is no difference"
+    ],
+    "answer": "map() returns iterator, list comprehension returns list; both apply function to elements",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "map() applies a function to each element and returns an iterator, while list comprehensions create lists directly and are often more readable.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_026",
+    "question": "What is the purpose of `filter()` function?",
+    "options": [
+      "Returns iterator with elements that satisfy a condition",
+      "Removes all elements from a list",
+      "Sorts elements based on criteria",
+      "Converts elements to different types"
+    ],
+    "answer": "Returns iterator with elements that satisfy a condition",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "filter() creates an iterator from elements of an iterable for which a function returns True.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_027",
+    "question": "What is the difference between `__str__` and `__repr__`?",
+    "options": [
+      "__str__ for human-readable output, __repr__ for developer/debugging output",
+      "__repr__ is for strings, __str__ is for numbers",
+      "__str__ is faster than __repr__",
+      "There is no difference"
+    ],
+    "answer": "__str__ for human-readable output, __repr__ for developer/debugging output",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "__str__ should return a human-readable string, while __repr__ should return an unambiguous string useful for debugging.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_028",
+    "question": "What is the purpose of `reduce()` function?",
+    "options": [
+      "Applies function cumulatively to items in sequence to reduce to single value",
+      "Removes elements from a list",
+      "Decreases the size of data structures",
+      "Simplifies complex expressions"
+    ],
+    "answer": "Applies function cumulatively to items in sequence to reduce to single value",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "reduce() applies a function of two arguments cumulatively to items in a sequence, from left to right, to reduce the sequence to a single value.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_029",
+    "question": "What is the difference between `sort()` and `sorted()`?",
+    "options": [
+      "sort() modifies list in-place, sorted() returns new sorted list",
+      "sorted() is faster than sort()",
+      "sort() returns new list, sorted() modifies in-place",
+      "There is no difference"
+    ],
+    "answer": "sort() modifies list in-place, sorted() returns new sorted list",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "list.sort() modifies the original list and returns None, while sorted() returns a new sorted list without modifying the original.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_030",
+    "question": "What is a Python closure?",
+    "options": [
+      "A function that captures variables from its enclosing scope",
+      "A way to close files",
+      "A method for ending programs",
+      "A type of exception handling"
+    ],
+    "answer": "A function that captures variables from its enclosing scope",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "A closure is a function that captures and retains access to variables from its enclosing (outer) scope even after the outer function returns.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_031",
+    "question": "What is the purpose of `property` decorator?",
+    "options": [
+      "Creates getter/setter methods that can be accessed like attributes",
+      "Improves performance of methods",
+      "Handles exceptions in methods",
+      "Creates static methods"
+    ],
+    "answer": "Creates getter/setter methods that can be accessed like attributes",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "@property decorator allows methods to be accessed like attributes, enabling controlled access to class attributes with getter/setter logic.",
+    "topic": "Python"
+  },
+  {
+    "id": "python_032",
+    "question": "What is the difference between `__new__` and `__init__`?",
+    "options": [
+      "__new__ creates the instance, __init__ initializes the created instance",
+      "__init__ creates the instance, __new__ initializes it",
+      "They both do the same thing",
+      "__new__ is for inheritance, __init__ is for composition"
+    ],
+    "answer": "__new__ creates the instance, __init__ initializes the created instance",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "__new__ is responsible for creating and returning a new instance of the class, while __init__ initializes the already created instance.",
+    "topic": "Python"
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "id": "dsa_001",
+    "question": "What is the time complexity of binary search?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(n log n)",
+      "O(1)"
+    ],
+    "answer": "O(log n)",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Binary search has O(log n) time complexity because it eliminates half of the remaining elements in each step by comparing with the middle element.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_002",
+    "question": "Which data structure is best for implementing a LRU cache?",
+    "options": [
+      "Array",
+      "Stack",
+      "Hash Map + Doubly Linked List",
+      "Binary Tree"
+    ],
+    "answer": "Hash Map + Doubly Linked List",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "LRU cache requires O(1) access and O(1) updates. A hash map provides O(1) access while a doubly linked list allows O(1) insertion/deletion for maintaining order.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_003",
+    "question": "What is the worst-case time complexity of QuickSort?",
+    "options": [
+      "O(n log n)",
+      "O(n²)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "answer": "O(n²)",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "QuickSort's worst-case time complexity is O(n²) when the pivot is always the smallest or largest element, though average case is O(n log n).",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_004",
+    "question": "What is a hash collision and how can it be resolved?",
+    "options": [
+      "When two keys map to the same hash value; resolved by chaining or open addressing",
+      "When hash function fails; resolved by using a different function",
+      "When hash table is full; resolved by increasing size",
+      "When hash values are negative; resolved by using absolute values"
+    ],
+    "answer": "When two keys map to the same hash value; resolved by chaining or open addressing",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Hash collision occurs when different keys produce the same hash value. It can be resolved using chaining (linked lists) or open addressing (probing).",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_005",
+    "question": "What is the difference between DFS and BFS?",
+    "options": [
+      "DFS uses queue, BFS uses stack",
+      "DFS uses stack, BFS uses queue",
+      "Both use the same data structure",
+      "DFS is always faster than BFS"
+    ],
+    "answer": "DFS uses stack, BFS uses queue",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "DFS (Depth-First Search) uses a stack (or recursion) to go deep first, while BFS (Breadth-First Search) uses a queue to explore level by level.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_006",
+    "question": "What is dynamic programming?",
+    "options": [
+      "A programming language feature",
+      "An optimization technique that solves problems by breaking them into overlapping subproblems",
+      "A way to allocate memory dynamically",
+      "A method for parallel programming"
+    ],
+    "answer": "An optimization technique that solves problems by breaking them into overlapping subproblems",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Dynamic programming solves complex problems by breaking them down into simpler overlapping subproblems and storing results to avoid redundant calculations.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_007",
+    "question": "What is the time complexity of inserting an element in a balanced BST?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "answer": "O(log n)",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "In a balanced Binary Search Tree, insertion takes O(log n) time because the tree height is maintained at log n through balancing operations.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_008",
+    "question": "What is the space complexity of merge sort?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "answer": "O(n)",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Merge sort requires O(n) additional space for the temporary arrays used during the merging process of the divided subarrays.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_009",
+    "question": "What is the time complexity of binary search?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(n²)"
+    ],
+    "answer": "O(log n)",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Binary search divides the search space in half with each comparison, resulting in O(log n) time complexity.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_010",
+    "question": "What is a hash table collision?",
+    "options": [
+      "When two different keys hash to the same index",
+      "When hash table runs out of memory",
+      "When hash function returns null",
+      "When two tables have same name"
+    ],
+    "answer": "When two different keys hash to the same index",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Hash collisions occur when different keys produce the same hash value, requiring collision resolution strategies like chaining or open addressing.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_011",
+    "question": "What is the difference between DFS and BFS?",
+    "options": [
+      "DFS explores depth first using stack, BFS explores breadth first using queue",
+      "BFS is always faster than DFS",
+      "DFS only works with trees",
+      "BFS uses more memory than DFS"
+    ],
+    "answer": "DFS explores depth first using stack, BFS explores breadth first using queue",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "DFS explores as far as possible along each branch before backtracking, while BFS explores all neighbors before moving to the next level.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_012",
+    "question": "What is dynamic programming?",
+    "options": [
+      "Solving problems by breaking them into overlapping subproblems and storing results",
+      "Programming that changes at runtime",
+      "Creating dynamic data structures",
+      "Programming with dynamic typing"
+    ],
+    "answer": "Solving problems by breaking them into overlapping subproblems and storing results",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Dynamic programming optimizes recursive solutions by storing results of subproblems to avoid redundant calculations.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_013",
+    "question": "What is the time complexity of quicksort in the worst case?",
+    "options": [
+      "O(n²)",
+      "O(n log n)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "answer": "O(n²)",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Quicksort's worst case occurs when the pivot is always the smallest or largest element, leading to O(n²) time complexity.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_014",
+    "question": "What is a trie data structure?",
+    "options": [
+      "A tree structure for storing strings with common prefixes",
+      "A structure with exactly three nodes",
+      "A type of binary tree",
+      "A sorting algorithm"
+    ],
+    "answer": "A tree structure for storing strings with common prefixes",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "A trie (prefix tree) efficiently stores strings by sharing common prefixes, useful for autocomplete and dictionary operations.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_015",
+    "question": "What is the difference between a min-heap and max-heap?",
+    "options": [
+      "Min-heap has smallest element at root, max-heap has largest element at root",
+      "Max-heap is always larger than min-heap",
+      "Min-heap only stores negative numbers",
+      "There is no difference"
+    ],
+    "answer": "Min-heap has smallest element at root, max-heap has largest element at root",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Min-heap maintains the smallest element at the root, while max-heap maintains the largest element at the root.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_016",
+    "question": "What is the two pointers technique?",
+    "options": [
+      "Using two pointers moving in same or opposite directions to solve problems efficiently",
+      "Using exactly two pointer variables",
+      "A technique for binary trees",
+      "A method for sorting arrays"
+    ],
+    "answer": "Using two pointers moving in same or opposite directions to solve problems efficiently",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Two pointers technique uses two pointers to traverse data structures efficiently, often reducing time complexity from O(n²) to O(n).",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_017",
+    "question": "What is the space complexity of merge sort?",
+    "options": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "answer": "O(n)",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Merge sort requires O(n) additional space for the temporary arrays used during the merging process.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_018",
+    "question": "What is a circular linked list?",
+    "options": [
+      "A linked list where the last node points back to the first node",
+      "A linked list arranged in a circle shape",
+      "A linked list with circular references",
+      "A linked list that can only move in circles"
+    ],
+    "answer": "A linked list where the last node points back to the first node",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "In a circular linked list, the last node's next pointer points to the first node, forming a circle.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_019",
+    "question": "What is the sliding window technique?",
+    "options": [
+      "A method to solve problems involving contiguous subarrays or substrings",
+      "A GUI programming technique",
+      "A way to slide data between memory locations",
+      "A sorting algorithm"
+    ],
+    "answer": "A method to solve problems involving contiguous subarrays or substrings",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Sliding window technique maintains a window of elements and slides it across the data to efficiently solve subarray/substring problems.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_020",
+    "question": "What is the difference between stable and unstable sorting?",
+    "options": [
+      "Stable sorting preserves relative order of equal elements, unstable doesn't",
+      "Stable sorting is always faster",
+      "Unstable sorting can crash the program",
+      "Stable sorting only works with numbers"
+    ],
+    "answer": "Stable sorting preserves relative order of equal elements, unstable doesn't",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Stable sorting algorithms maintain the relative order of elements with equal keys, while unstable algorithms may change this order.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_021",
+    "question": "What is Dijkstra's algorithm used for?",
+    "options": [
+      "Finding shortest paths from a source vertex to all other vertices",
+      "Sorting arrays efficiently",
+      "Finding cycles in graphs",
+      "Balancing binary trees"
+    ],
+    "answer": "Finding shortest paths from a source vertex to all other vertices",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Dijkstra's algorithm finds the shortest paths from a source vertex to all other vertices in a weighted graph with non-negative edge weights.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_022",
+    "question": "What is the time complexity of inserting into a balanced BST?",
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "answer": "O(log n)",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "In a balanced binary search tree, insertion takes O(log n) time due to the tree's height being logarithmic.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_023",
+    "question": "What is backtracking?",
+    "options": [
+      "A technique that explores all possible solutions and backtracks when reaching dead ends",
+      "Undoing previous operations",
+      "Moving backwards through data structures",
+      "A type of recursion"
+    ],
+    "answer": "A technique that explores all possible solutions and backtracks when reaching dead ends",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Backtracking systematically explores all possible solutions, abandoning candidates that cannot lead to valid solutions.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_024",
+    "question": "What is the difference between array and linked list?",
+    "options": [
+      "Array has O(1) random access, linked list has O(1) insertion/deletion at known position",
+      "Linked list is always faster than array",
+      "Array can only store numbers",
+      "Linked list uses less memory than array"
+    ],
+    "answer": "Array has O(1) random access, linked list has O(1) insertion/deletion at known position",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Arrays provide constant-time random access but expensive insertion/deletion, while linked lists offer efficient insertion/deletion but sequential access.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_025",
+    "question": "What is a priority queue?",
+    "options": [
+      "A queue where elements are served based on priority rather than insertion order",
+      "A queue with high processing priority",
+      "A queue that processes elements faster",
+      "A queue with limited capacity"
+    ],
+    "answer": "A queue where elements are served based on priority rather than insertion order",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Priority queues serve elements based on their priority value rather than their insertion order, typically implemented using heaps.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_026",
+    "question": "What is the greedy algorithm approach?",
+    "options": [
+      "Makes locally optimal choices at each step hoping to find global optimum",
+      "Uses maximum memory for faster execution",
+      "Always finds the optimal solution",
+      "Processes data greedily without optimization"
+    ],
+    "answer": "Makes locally optimal choices at each step hoping to find global optimum",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Greedy algorithms make the locally optimal choice at each step, which may or may not lead to a globally optimal solution.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_027",
+    "question": "What is the difference between depth-first and breadth-first traversal?",
+    "options": [
+      "DFS goes deep before exploring siblings, BFS explores all siblings before going deeper",
+      "BFS is always faster than DFS",
+      "DFS only works with binary trees",
+      "BFS uses less memory than DFS"
+    ],
+    "answer": "DFS goes deep before exploring siblings, BFS explores all siblings before going deeper",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "DFS explores as far as possible along each branch before backtracking, while BFS explores all nodes at the current level before moving deeper.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_028",
+    "question": "What is an AVL tree?",
+    "options": [
+      "A self-balancing binary search tree where heights of subtrees differ by at most 1",
+      "A tree with exactly three levels",
+      "A tree that stores only alphabetical data",
+      "A tree with variable node sizes"
+    ],
+    "answer": "A self-balancing binary search tree where heights of subtrees differ by at most 1",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "AVL trees maintain balance by ensuring the height difference between left and right subtrees is at most 1, guaranteeing O(log n) operations.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_029",
+    "question": "What is the time complexity of heap sort?",
+    "options": [
+      "O(n log n)",
+      "O(n²)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "answer": "O(n log n)",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Heap sort builds a heap in O(n) time and performs n extractions, each taking O(log n), resulting in O(n log n) total complexity.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_030",
+    "question": "What is memoization?",
+    "options": [
+      "Storing results of expensive function calls to avoid recomputation",
+      "Memorizing algorithms by heart",
+      "A memory management technique",
+      "Creating memory-efficient data structures"
+    ],
+    "answer": "Storing results of expensive function calls to avoid recomputation",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Memoization is an optimization technique that stores the results of expensive function calls and returns cached results for repeated inputs.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_031",
+    "question": "What is the difference between divide and conquer and dynamic programming?",
+    "options": [
+      "Divide and conquer solves independent subproblems, DP solves overlapping subproblems",
+      "Dynamic programming is always faster",
+      "Divide and conquer only works with sorting",
+      "There is no difference"
+    ],
+    "answer": "Divide and conquer solves independent subproblems, DP solves overlapping subproblems",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Divide and conquer breaks problems into independent subproblems, while dynamic programming handles overlapping subproblems by storing results.",
+    "topic": "Data Structure and Algorithms"
+  },
+  {
+    "id": "dsa_032",
+    "question": "What is the time complexity of finding an element in a hash table?",
+    "options": [
+      "O(1) average case, O(n) worst case",
+      "Always O(1)",
+      "Always O(log n)",
+      "Always O(n)"
+    ],
+    "answer": "O(1) average case, O(n) worst case",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Hash tables provide O(1) average case lookup, but worst case is O(n) when all elements hash to the same bucket.",
+    "topic": "Data Structure and Algorithms"
+  }
+]

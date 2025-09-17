@@ -1,0 +1,482 @@
+[
+  {
+    "id": "rl_001",
+    "question": "What is the exploration vs exploitation tradeoff?",
+    "options": [
+      "Choosing between different algorithms",
+      "Balancing between trying new actions vs using known good actions",
+      "Deciding between supervised and unsupervised learning",
+      "Choosing between different reward functions"
+    ],
+    "answer": "Balancing between trying new actions vs using known good actions",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "The exploration-exploitation tradeoff is the balance between exploring new actions to discover better strategies versus exploiting known actions that yield good rewards.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_002",
+    "question": "What is a Markov Decision Process (MDP)?",
+    "options": [
+      "A type of neural network",
+      "A mathematical framework for decision-making with states, actions, and rewards",
+      "A clustering algorithm",
+      "A data preprocessing technique"
+    ],
+    "answer": "A mathematical framework for decision-making with states, actions, and rewards",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "An MDP is a mathematical framework that models decision-making situations where outcomes are partly random and partly under the control of a decision maker.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_003",
+    "question": "What is Q-learning?",
+    "options": [
+      "A supervised learning algorithm",
+      "A model-free reinforcement learning algorithm that learns optimal actions",
+      "A clustering technique",
+      "A data visualization technique"
+    ],
+    "answer": "A model-free reinforcement learning algorithm that learns optimal actions",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Q-learning is a model-free reinforcement learning algorithm that learns the quality of actions, telling an agent what action to take under what circumstances.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_004",
+    "question": "What is the Bellman equation used for?",
+    "options": [
+      "Calculating gradients in neural networks",
+      "Computing optimal value functions in dynamic programming",
+      "Normalizing data",
+      "Selecting hyperparameters"
+    ],
+    "answer": "Computing optimal value functions in dynamic programming",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "The Bellman equation expresses the relationship between the value of a state and the values of its successor states, fundamental to dynamic programming in RL.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_005",
+    "question": "What is the difference between on-policy and off-policy learning?",
+    "options": [
+      "On-policy uses more data than off-policy",
+      "On-policy learns from the policy being improved, off-policy learns from a different policy",
+      "On-policy is faster than off-policy",
+      "There is no difference"
+    ],
+    "answer": "On-policy learns from the policy being improved, off-policy learns from a different policy",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "On-policy methods learn about the policy being used to make decisions, while off-policy methods can learn about an optimal policy while following a different exploratory policy.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_006",
+    "question": "What is Deep Q-Network (DQN)?",
+    "options": [
+      "A type of CNN architecture",
+      "Q-learning combined with deep neural networks",
+      "A natural language processing model",
+      "A data augmentation technique"
+    ],
+    "answer": "Q-learning combined with deep neural networks",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "DQN combines Q-learning with deep neural networks to handle high-dimensional state spaces, using experience replay and target networks for stability.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_007",
+    "question": "What is the purpose of experience replay in DQN?",
+    "options": [
+      "To speed up training",
+      "To break correlation between consecutive experiences and improve sample efficiency",
+      "To reduce memory usage",
+      "To visualize learning progress"
+    ],
+    "answer": "To break correlation between consecutive experiences and improve sample efficiency",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Experience replay stores past experiences and randomly samples from them during training, breaking temporal correlations and improving sample efficiency.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_008",
+    "question": "What is policy gradient method?",
+    "options": [
+      "A method to evaluate policies",
+      "A direct optimization of policy parameters using gradients",
+      "A way to visualize policies",
+      "A technique to compress policies"
+    ],
+    "answer": "A direct optimization of policy parameters using gradients",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Policy gradient methods directly optimize the policy parameters by computing gradients of the expected reward with respect to policy parameters.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_009",
+    "question": "What is the difference between on-policy and off-policy methods?",
+    "options": [
+      "On-policy learns from current policy, off-policy learns from different policy",
+      "On-policy is faster than off-policy",
+      "Off-policy only works with discrete actions",
+      "There is no difference"
+    ],
+    "answer": "On-policy learns from current policy, off-policy learns from different policy",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "On-policy methods learn about the policy being used for action selection, while off-policy methods learn about a different policy from the one being followed.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_010",
+    "question": "What is the exploration-exploitation tradeoff?",
+    "options": [
+      "Balance between trying new actions vs using known good actions",
+      "Balance between training speed and accuracy",
+      "Balance between memory usage and performance",
+      "Balance between supervised and unsupervised learning"
+    ],
+    "answer": "Balance between trying new actions vs using known good actions",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "The agent must balance exploring new actions to discover better strategies vs exploiting known actions that yield good rewards.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_011",
+    "question": "What is epsilon-greedy strategy?",
+    "options": [
+      "Choose random action with probability ε, best action with probability 1-ε",
+      "Always choose the best action",
+      "Always choose random actions",
+      "Choose actions based on their frequency"
+    ],
+    "answer": "Choose random action with probability ε, best action with probability 1-ε",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Epsilon-greedy balances exploration and exploitation by choosing random actions ε% of the time and the best known action (1-ε)% of the time.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_012",
+    "question": "What is the difference between value-based and policy-based methods?",
+    "options": [
+      "Value-based learns value functions, policy-based learns policy directly",
+      "Policy-based is always better than value-based",
+      "Value-based only works with continuous actions",
+      "There is no difference"
+    ],
+    "answer": "Value-based learns value functions, policy-based learns policy directly",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Value-based methods learn value functions (Q-values) and derive policy from them, while policy-based methods directly learn the policy.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_013",
+    "question": "What is temporal difference (TD) learning?",
+    "options": [
+      "Learning from differences between successive value estimates",
+      "Learning based on time constraints",
+      "Learning from temporal sequences only",
+      "Learning that requires complete episodes"
+    ],
+    "answer": "Learning from differences between successive value estimates",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "TD learning updates value estimates based on the difference between current estimate and a target based on immediate reward plus discounted next state value.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_014",
+    "question": "What is the purpose of experience replay in DQN?",
+    "options": [
+      "To break correlation between consecutive experiences and improve sample efficiency",
+      "To speed up training",
+      "To reduce memory usage",
+      "To handle continuous action spaces"
+    ],
+    "answer": "To break correlation between consecutive experiences and improve sample efficiency",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Experience replay stores past experiences and randomly samples from them during training, breaking temporal correlations and improving data efficiency.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_015",
+    "question": "What is the actor-critic architecture?",
+    "options": [
+      "Actor learns policy, critic learns value function to guide actor",
+      "Two agents competing against each other",
+      "A method for multi-agent learning",
+      "A way to handle discrete action spaces"
+    ],
+    "answer": "Actor learns policy, critic learns value function to guide actor",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Actor-critic combines value-based and policy-based methods: the actor learns the policy while the critic learns the value function to provide feedback.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_016",
+    "question": "What is the difference between SARSA and Q-learning?",
+    "options": [
+      "SARSA is on-policy, Q-learning is off-policy",
+      "Q-learning is always faster than SARSA",
+      "SARSA only works with continuous actions",
+      "There is no difference"
+    ],
+    "answer": "SARSA is on-policy, Q-learning is off-policy",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "SARSA updates Q-values based on the action actually taken (on-policy), while Q-learning updates based on the maximum Q-value of the next state (off-policy).",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_017",
+    "question": "What is a policy gradient method?",
+    "options": [
+      "A method that directly optimizes policy parameters using gradients",
+      "A method for computing value functions",
+      "A technique for environment modeling",
+      "A way to handle discrete action spaces"
+    ],
+    "answer": "A method that directly optimizes policy parameters using gradients",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Policy gradient methods directly optimize the policy by computing gradients of expected rewards with respect to policy parameters.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_018",
+    "question": "What is the purpose of a baseline in policy gradients?",
+    "options": [
+      "To reduce variance in gradient estimates",
+      "To speed up training",
+      "To handle continuous actions",
+      "To prevent overfitting"
+    ],
+    "answer": "To reduce variance in gradient estimates",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Baselines (like value functions) are subtracted from returns to reduce variance in policy gradient estimates without introducing bias.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_019",
+    "question": "What is model-free vs model-based RL?",
+    "options": [
+      "Model-free learns directly from experience, model-based learns environment model",
+      "Model-based is always better than model-free",
+      "Model-free requires more computational resources",
+      "There is no difference"
+    ],
+    "answer": "Model-free learns directly from experience, model-based learns environment model",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Model-free methods learn directly from trial-and-error without modeling the environment, while model-based methods learn a model of the environment dynamics.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_020",
+    "question": "What is the purpose of target networks in DQN?",
+    "options": [
+      "To stabilize training by providing fixed targets for Q-value updates",
+      "To speed up convergence",
+      "To handle multiple agents",
+      "To reduce memory usage"
+    ],
+    "answer": "To stabilize training by providing fixed targets for Q-value updates",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Target networks provide stable targets for Q-value updates by using a slowly updated copy of the main network, preventing instability from chasing moving targets.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_021",
+    "question": "What is the difference between episodic and continuing tasks?",
+    "options": [
+      "Episodic tasks have clear end states, continuing tasks run indefinitely",
+      "Episodic tasks are easier to solve",
+      "Continuing tasks always have higher rewards",
+      "There is no difference"
+    ],
+    "answer": "Episodic tasks have clear end states, continuing tasks run indefinitely",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Episodic tasks have terminal states where episodes end naturally, while continuing tasks have no natural ending and run indefinitely.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_022",
+    "question": "What is importance sampling in RL?",
+    "options": [
+      "A technique to estimate expectations under one distribution using samples from another",
+      "A method to select important experiences",
+      "A way to prioritize certain states",
+      "A technique for action selection"
+    ],
+    "answer": "A technique to estimate expectations under one distribution using samples from another",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Importance sampling allows off-policy learning by weighting samples from a behavior policy to estimate values under a target policy.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_023",
+    "question": "What is the purpose of entropy regularization?",
+    "options": [
+      "To encourage exploration by preventing policy from becoming too deterministic",
+      "To speed up convergence",
+      "To reduce computational complexity",
+      "To handle continuous action spaces"
+    ],
+    "answer": "To encourage exploration by preventing policy from becoming too deterministic",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Entropy regularization adds an entropy term to the objective function, encouraging the policy to maintain some randomness and continue exploring.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_024",
+    "question": "What is the difference between value iteration and policy iteration?",
+    "options": [
+      "Value iteration updates values directly, policy iteration alternates between policy evaluation and improvement",
+      "Policy iteration is always faster",
+      "Value iteration only works with continuous spaces",
+      "There is no difference"
+    ],
+    "answer": "Value iteration updates values directly, policy iteration alternates between policy evaluation and improvement",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Value iteration directly updates value estimates until convergence, while policy iteration alternates between evaluating the current policy and improving it.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_025",
+    "question": "What is a multi-armed bandit problem?",
+    "options": [
+      "A simplified RL problem with one state and multiple actions",
+      "A problem with multiple agents",
+      "A problem requiring multiple neural networks",
+      "A problem with continuous action spaces"
+    ],
+    "answer": "A simplified RL problem with one state and multiple actions",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Multi-armed bandit is a fundamental RL problem with one state where the agent must choose among multiple actions to maximize cumulative reward.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_026",
+    "question": "What is the purpose of eligibility traces?",
+    "options": [
+      "To assign credit to states/actions that led to rewards over multiple time steps",
+      "To track agent's movement through environment",
+      "To store experience for replay",
+      "To handle partial observability"
+    ],
+    "answer": "To assign credit to states/actions that led to rewards over multiple time steps",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Eligibility traces provide a mechanism for temporal credit assignment, allowing recent states/actions to receive more credit for current rewards.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_027",
+    "question": "What is the difference between deterministic and stochastic policies?",
+    "options": [
+      "Deterministic policies always choose same action, stochastic policies use probability distributions",
+      "Stochastic policies are always better",
+      "Deterministic policies only work in discrete spaces",
+      "There is no difference"
+    ],
+    "answer": "Deterministic policies always choose same action, stochastic policies use probability distributions",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Deterministic policies map states to specific actions, while stochastic policies output probability distributions over actions.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_028",
+    "question": "What is proximal policy optimization (PPO)?",
+    "options": [
+      "A policy gradient method that constrains policy updates to prevent large changes",
+      "A value-based method for discrete actions",
+      "A model-based planning algorithm",
+      "A technique for environment simulation"
+    ],
+    "answer": "A policy gradient method that constrains policy updates to prevent large changes",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "PPO constrains policy updates using a clipped objective function to prevent destructively large policy changes while maintaining sample efficiency.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_029",
+    "question": "What is the purpose of double Q-learning?",
+    "options": [
+      "To reduce overestimation bias in Q-value updates",
+      "To handle two different environments",
+      "To speed up training by using two networks",
+      "To handle continuous action spaces"
+    ],
+    "answer": "To reduce overestimation bias in Q-value updates",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Double Q-learning uses two Q-functions to reduce the overestimation bias that occurs when the same values are used for both action selection and evaluation.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_030",
+    "question": "What is the difference between Monte Carlo and Temporal Difference methods?",
+    "options": [
+      "MC waits for episode completion, TD updates after each step",
+      "TD is always more accurate than MC",
+      "MC only works with continuous spaces",
+      "There is no difference"
+    ],
+    "answer": "MC waits for episode completion, TD updates after each step",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Monte Carlo methods wait until episode completion to update values using actual returns, while TD methods update after each step using bootstrapped estimates.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_031",
+    "question": "What is curriculum learning in RL?",
+    "options": [
+      "Training on progressively more difficult tasks to improve learning efficiency",
+      "Learning multiple policies simultaneously",
+      "A method for handling partial observability",
+      "A technique for action space discretization"
+    ],
+    "answer": "Training on progressively more difficult tasks to improve learning efficiency",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Curriculum learning structures the learning process by starting with easier tasks and gradually increasing difficulty, often leading to better final performance.",
+    "topic": "Reinforcement Learning"
+  },
+  {
+    "id": "rl_032",
+    "question": "What is the credit assignment problem in RL?",
+    "options": [
+      "Determining which actions were responsible for received rewards",
+      "Assigning computational resources to different algorithms",
+      "Distributing rewards among multiple agents",
+      "Balancing exploration and exploitation"
+    ],
+    "answer": "Determining which actions were responsible for received rewards",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Credit assignment involves determining which of the many actions taken by an agent were responsible for the eventual reward, especially when rewards are delayed.",
+    "topic": "Reinforcement Learning"
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "id": "pytorch1",
+    "question": "What is the main advantage of using PyTorch's `autograd`?",
+    "options": [
+      "It automatically computes gradients for tensor operations",
+      "It speeds up matrix multiplications",
+      "It provides pre-trained models",
+      "It handles data loading and batching"
+    ],
+    "answer": "It automatically computes gradients for tensor operations",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "PyTorch's `autograd` provides automatic differentiation for all operations on Tensors. It records all operations performed on tensors to compute the gradient during backpropagation.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch2",
+    "question": "What is the purpose of `torch.nn.Module`?",
+    "options": [
+      "Base class for all neural network modules in PyTorch",
+      "A utility for loading datasets",
+      "A type of optimization algorithm",
+      "A data structure for storing tensors"
+    ],
+    "answer": "Base class for all neural network modules in PyTorch",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "`torch.nn.Module` is the base class for all neural network modules in PyTorch. Your models should also subclass this class. It provides important functionality like parameter management and model saving/loading.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch3",
+    "question": "What does `torch.no_grad()` do?",
+    "options": [
+      "Disables gradient calculation for inference",
+      "Removes all gradients from a tensor",
+      "Speeds up tensor operations",
+      "Initializes model weights"
+    ],
+    "answer": "Disables gradient calculation for inference",
+    "difficulty": "hard",
+    "time_limit": 20,
+    "explanation": "`torch.no_grad()` is a context manager that disables gradient calculation. It's used during inference to reduce memory usage and speed up computations since gradients aren't needed when making predictions.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch4",
+    "question": "What is the difference between `torch.Tensor` and `torch.tensor()`?",
+    "options": [
+      "torch.Tensor is a class, torch.tensor() is a function that creates tensors",
+      "torch.tensor() is faster than torch.Tensor",
+      "torch.Tensor only works with integers, torch.tensor() works with floats",
+      "There is no difference between them"
+    ],
+    "answer": "torch.Tensor is a class, torch.tensor() is a function that creates tensors",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "`torch.Tensor` is the tensor class constructor, while `torch.tensor()` is a factory function that creates tensors with automatic dtype inference and is generally preferred for creating new tensors.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch5",
+    "question": "What does `loss.backward()` do in PyTorch?",
+    "options": [
+      "Reverses the forward pass",
+      "Computes gradients using backpropagation",
+      "Undoes the last operation",
+      "Moves the tensor to CPU"
+    ],
+    "answer": "Computes gradients using backpropagation",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "`loss.backward()` computes the gradients of the loss with respect to all tensors that have `requires_grad=True` using automatic differentiation (backpropagation).",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch6",
+    "question": "What is the purpose of `optimizer.zero_grad()` in PyTorch?",
+    "options": [
+      "Sets all model parameters to zero",
+      "Clears gradients from the previous iteration",
+      "Resets the optimizer learning rate",
+      "Initializes the optimizer"
+    ],
+    "answer": "Clears gradients from the previous iteration",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "`optimizer.zero_grad()` clears the gradients of all optimized tensors. This is necessary because PyTorch accumulates gradients by default, so you need to clear them before each backward pass.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch7",
+    "question": "What does `model.eval()` do in PyTorch?",
+    "options": [
+      "Evaluates the model performance",
+      "Sets the model to evaluation mode, affecting dropout and batch norm",
+      "Computes model accuracy",
+      "Saves the model to disk"
+    ],
+    "answer": "Sets the model to evaluation mode, affecting dropout and batch norm",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "`model.eval()` sets the model to evaluation mode. This affects layers like Dropout and BatchNorm, which behave differently during training vs evaluation (e.g., dropout is disabled during evaluation).",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch8",
+    "question": "What is the difference between `torch.cat()` and `torch.stack()`?",
+    "options": [
+      "torch.cat() concatenates along existing dimension, torch.stack() creates new dimension",
+      "torch.stack() is faster than torch.cat()",
+      "torch.cat() only works with 2D tensors, torch.stack() works with any dimension",
+      "There is no difference between them"
+    ],
+    "answer": "torch.cat() concatenates along existing dimension, torch.stack() creates new dimension",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "`torch.cat()` concatenates tensors along an existing dimension, while `torch.stack()` creates a new dimension and stacks tensors along it. For example, cat([a,b]) joins them, stack([a,b]) creates a new dimension containing both.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_009",
+    "question": "What is the purpose of torch.no_grad()?",
+    "options": [
+      "Disables gradient computation to save memory and speed up inference",
+      "Removes gradients from tensors",
+      "Prevents model training",
+      "Disables CUDA operations"
+    ],
+    "answer": "Disables gradient computation to save memory and speed up inference",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "torch.no_grad() context manager disables gradient computation, reducing memory usage and speeding up operations during inference.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_010",
+    "question": "What does model.eval() do?",
+    "options": [
+      "Sets model to evaluation mode, affecting dropout and batch normalization",
+      "Evaluates model performance",
+      "Runs model validation",
+      "Computes model accuracy"
+    ],
+    "answer": "Sets model to evaluation mode, affecting dropout and batch normalization",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "model.eval() sets the model to evaluation mode, disabling dropout and using running statistics for batch normalization.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_011",
+    "question": "What is the difference between torch.cat() and torch.stack()?",
+    "options": [
+      "cat() concatenates along existing dimension, stack() creates new dimension",
+      "stack() is faster than cat()",
+      "cat() only works with 2D tensors",
+      "There is no difference"
+    ],
+    "answer": "cat() concatenates along existing dimension, stack() creates new dimension",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "torch.cat() concatenates tensors along an existing dimension, while torch.stack() creates a new dimension and stacks tensors.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_012",
+    "question": "What does torch.nn.CrossEntropyLoss combine?",
+    "options": [
+      "LogSoftmax and NLLLoss",
+      "Softmax and MSELoss",
+      "ReLU and BCELoss",
+      "Sigmoid and L1Loss"
+    ],
+    "answer": "LogSoftmax and NLLLoss",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "CrossEntropyLoss combines LogSoftmax and NLLLoss in a single class, commonly used for multi-class classification.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_013",
+    "question": "What is the purpose of torch.nn.DataParallel?",
+    "options": [
+      "Enables model training across multiple GPUs",
+      "Loads data in parallel from multiple sources",
+      "Processes multiple batches simultaneously",
+      "Parallelizes tensor operations"
+    ],
+    "answer": "Enables model training across multiple GPUs",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "DataParallel wraps a model to enable training across multiple GPUs by splitting batches and synchronizing gradients.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_014",
+    "question": "What does torch.save() and torch.load() handle?",
+    "options": [
+      "Model state dictionaries and entire model objects",
+      "Only tensor data",
+      "Only model architecture",
+      "Only optimizer states"
+    ],
+    "answer": "Model state dictionaries and entire model objects",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "torch.save() and torch.load() can serialize and deserialize model state dictionaries, entire models, and other PyTorch objects.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_015",
+    "question": "What is the difference between tensor.view() and tensor.reshape()?",
+    "options": [
+      "view() requires contiguous memory, reshape() works with non-contiguous tensors",
+      "reshape() is faster than view()",
+      "view() creates copies, reshape() creates views",
+      "There is no difference"
+    ],
+    "answer": "view() requires contiguous memory, reshape() works with non-contiguous tensors",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "view() requires tensors to be contiguous in memory, while reshape() can handle non-contiguous tensors by making a copy if needed.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_016",
+    "question": "What does torch.nn.Dropout do during training vs evaluation?",
+    "options": [
+      "Randomly zeros elements during training, does nothing during evaluation",
+      "Always zeros the same elements",
+      "Only works during evaluation",
+      "Reduces learning rate during training"
+    ],
+    "answer": "Randomly zeros elements during training, does nothing during evaluation",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Dropout randomly zeros elements during training for regularization, but is disabled during evaluation mode.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_017",
+    "question": "What is the purpose of torch.utils.data.DataLoader?",
+    "options": [
+      "Provides batching, shuffling, and parallel data loading",
+      "Loads pre-trained models",
+      "Downloads datasets from internet",
+      "Converts data formats"
+    ],
+    "answer": "Provides batching, shuffling, and parallel data loading",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "DataLoader wraps datasets to provide batching, shuffling, and multi-process data loading for efficient training.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_018",
+    "question": "What does torch.nn.BatchNorm2d do?",
+    "options": [
+      "Normalizes inputs across batch dimension for 2D feature maps",
+      "Normalizes only the batch size",
+      "Applies 2D convolution",
+      "Reduces tensor dimensions"
+    ],
+    "answer": "Normalizes inputs across batch dimension for 2D feature maps",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "BatchNorm2d normalizes inputs across the batch dimension for each feature map, stabilizing training and improving convergence.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_019",
+    "question": "What is torch.jit.script() used for?",
+    "options": [
+      "Compiles PyTorch models to TorchScript for production deployment",
+      "Writes training scripts automatically",
+      "Debugs model execution",
+      "Optimizes memory usage"
+    ],
+    "answer": "Compiles PyTorch models to TorchScript for production deployment",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "torch.jit.script() compiles PyTorch models to TorchScript, enabling deployment in production environments without Python dependencies.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_020",
+    "question": "What does torch.optim.lr_scheduler do?",
+    "options": [
+      "Adjusts learning rate during training based on specified schedule",
+      "Schedules when to run optimization steps",
+      "Controls batch size scheduling",
+      "Manages GPU memory allocation"
+    ],
+    "answer": "Adjusts learning rate during training based on specified schedule",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Learning rate schedulers automatically adjust the learning rate during training according to predefined schedules to improve convergence.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_021",
+    "question": "What is the purpose of torch.nn.functional?",
+    "options": [
+      "Provides functional versions of neural network operations without parameters",
+      "Contains only activation functions",
+      "Handles file I/O operations",
+      "Manages model architecture"
+    ],
+    "answer": "Provides functional versions of neural network operations without parameters",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "torch.nn.functional provides stateless functional versions of neural network operations, useful for custom modules and one-off operations.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_022",
+    "question": "What does torch.nn.Sequential do?",
+    "options": [
+      "Creates a container that passes input through modules in sequence",
+      "Processes data sequentially in time",
+      "Handles sequence-to-sequence models",
+      "Manages training epochs sequentially"
+    ],
+    "answer": "Creates a container that passes input through modules in sequence",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Sequential is a container module that passes input through its child modules in the order they were added.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_023",
+    "question": "What is the difference between tensor.detach() and tensor.clone()?",
+    "options": [
+      "detach() removes from computation graph, clone() creates copy with gradients",
+      "clone() is faster than detach()",
+      "detach() creates deep copy, clone() creates shallow copy",
+      "There is no difference"
+    ],
+    "answer": "detach() removes from computation graph, clone() creates copy with gradients",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "detach() creates a tensor that shares data but is detached from computation graph, while clone() creates a copy that retains gradient information.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_024",
+    "question": "What does torch.nn.Embedding do?",
+    "options": [
+      "Maps discrete tokens to dense vector representations",
+      "Embeds models into other models",
+      "Compresses tensor data",
+      "Creates 2D embeddings from 1D data"
+    ],
+    "answer": "Maps discrete tokens to dense vector representations",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Embedding layers map discrete tokens (like word indices) to dense vector representations, commonly used in NLP tasks.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_025",
+    "question": "What is torch.nn.ModuleList used for?",
+    "options": [
+      "Stores modules in a list while properly registering parameters",
+      "Creates sequential model architectures",
+      "Lists available PyTorch modules",
+      "Manages module dependencies"
+    ],
+    "answer": "Stores modules in a list while properly registering parameters",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "ModuleList holds submodules in a list while ensuring their parameters are properly registered with the parent module.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_026",
+    "question": "What does torch.nn.utils.clip_grad_norm_() do?",
+    "options": [
+      "Clips gradients to prevent exploding gradient problem",
+      "Normalizes input data",
+      "Clips tensor values to specified range",
+      "Reduces model complexity"
+    ],
+    "answer": "Clips gradients to prevent exploding gradient problem",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Gradient clipping prevents exploding gradients by scaling gradients when their norm exceeds a threshold.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_027",
+    "question": "What is the purpose of torch.nn.Parameter?",
+    "options": [
+      "Wraps tensors to be automatically registered as model parameters",
+      "Sets hyperparameters for training",
+      "Configures model architecture",
+      "Manages optimizer settings"
+    ],
+    "answer": "Wraps tensors to be automatically registered as model parameters",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Parameter wraps tensors to automatically register them as model parameters, making them available to optimizers and state_dict().",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_028",
+    "question": "What does torch.nn.LSTM return?",
+    "options": [
+      "Output tensor and tuple of hidden and cell states",
+      "Only the final output",
+      "Only hidden states",
+      "Concatenated input and output"
+    ],
+    "answer": "Output tensor and tuple of hidden and cell states",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "LSTM returns output for all time steps and a tuple containing the final hidden state and cell state.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_029",
+    "question": "What is torch.distributed used for?",
+    "options": [
+      "Distributed training across multiple machines or GPUs",
+      "Distributing data across memory",
+      "Creating distributed datasets",
+      "Managing distributed file systems"
+    ],
+    "answer": "Distributed training across multiple machines or GPUs",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "torch.distributed enables distributed training by coordinating multiple processes across machines or GPUs for scalable training.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_030",
+    "question": "What does torch.nn.functional.interpolate() do?",
+    "options": [
+      "Resizes tensors using various interpolation methods",
+      "Interpolates missing values in datasets",
+      "Smooths tensor values",
+      "Estimates intermediate model states"
+    ],
+    "answer": "Resizes tensors using various interpolation methods",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "F.interpolate() resizes tensors using methods like nearest neighbor, bilinear, or trilinear interpolation, commonly used in computer vision.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_031",
+    "question": "What is torch.autograd.Function used for?",
+    "options": [
+      "Creating custom operations with custom forward and backward passes",
+      "Automatically generating functions",
+      "Debugging autograd operations",
+      "Optimizing existing functions"
+    ],
+    "answer": "Creating custom operations with custom forward and backward passes",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "torch.autograd.Function allows creation of custom operations by defining custom forward and backward methods for gradient computation.",
+    "topic": "Pytorch"
+  },
+  {
+    "id": "pytorch_032",
+    "question": "What does torch.nn.utils.rnn.pack_padded_sequence() do?",
+    "options": [
+      "Packs padded sequences to ignore padding during RNN computation",
+      "Adds padding to sequences",
+      "Removes padding from sequences",
+      "Sorts sequences by length"
+    ],
+    "answer": "Packs padded sequences to ignore padding during RNN computation",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "pack_padded_sequence() efficiently handles variable-length sequences by packing them so RNNs can ignore padding tokens during computation.",
+    "topic": "Pytorch"
+  }
+]

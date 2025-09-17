@@ -1,0 +1,812 @@
+[
+  {
+    "id": "dl_001",
+    "question": "What is the vanishing gradient problem?",
+    "options": [
+      "When gradients become too large during backpropagation",
+      "When gradients become very small and learning slows down in deep networks",
+      "When the learning rate is too high",
+      "When there are too many layers in the network"
+    ],
+    "answer": "When gradients become very small and learning slows down in deep networks",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "The vanishing gradient problem occurs when gradients become exponentially small as they propagate back through deep networks, making it difficult to train early layers.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_002",
+    "question": "What is the purpose of batch normalization?",
+    "options": [
+      "To reduce the size of batches",
+      "To normalize input data before training",
+      "To normalize layer inputs to stabilize and speed up training",
+      "To prevent overfitting"
+    ],
+    "answer": "To normalize layer inputs to stabilize and speed up training",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Batch normalization normalizes the inputs to each layer, reducing internal covariate shift and allowing for higher learning rates and faster training.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_003",
+    "question": "What is dropout and how does it help prevent overfitting?",
+    "options": [
+      "Removing data points from the training set",
+      "Randomly setting some neurons to zero during training",
+      "Reducing the learning rate gradually",
+      "Stopping training early"
+    ],
+    "answer": "Randomly setting some neurons to zero during training",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Dropout randomly sets a fraction of neurons to zero during training, forcing the network to not rely on specific neurons and improving generalization.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_004",
+    "question": "What is the difference between CNN and RNN?",
+    "options": [
+      "CNN is for images, RNN is for sequences",
+      "CNN is faster than RNN",
+      "CNN uses more memory than RNN",
+      "There is no significant difference"
+    ],
+    "answer": "CNN is for images, RNN is for sequences",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "CNNs are designed for spatial data like images using convolution operations, while RNNs are designed for sequential data with memory capabilities.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_005",
+    "question": "What is transfer learning?",
+    "options": [
+      "Training multiple models simultaneously",
+      "Using pre-trained models and adapting them to new tasks",
+      "Transferring data between different formats",
+      "Moving models between different hardware"
+    ],
+    "answer": "Using pre-trained models and adapting them to new tasks",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Transfer learning involves taking a pre-trained model and fine-tuning it for a new but related task, leveraging learned features to improve performance and reduce training time.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_006",
+    "question": "What is the attention mechanism in neural networks?",
+    "options": [
+      "A way to focus on relevant parts of input data",
+      "A method to reduce network size",
+      "A technique to speed up training",
+      "A regularization method"
+    ],
+    "answer": "A way to focus on relevant parts of input data",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Attention mechanisms allow models to focus on different parts of the input sequence when producing each part of the output, improving performance on long sequences.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_007",
+    "question": "What is the main advantage of LSTM over vanilla RNN?",
+    "options": [
+      "LSTM is faster to train",
+      "LSTM can handle long-term dependencies better",
+      "LSTM uses less memory",
+      "LSTM requires less data"
+    ],
+    "answer": "LSTM can handle long-term dependencies better",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "LSTM (Long Short-Term Memory) networks can capture long-term dependencies through their gating mechanisms, solving the vanishing gradient problem of vanilla RNNs.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_008",
+    "question": "What is a Generative Adversarial Network (GAN)?",
+    "options": [
+      "A network that classifies images",
+      "Two networks competing: generator creates fake data, discriminator detects fake data",
+      "A network that reduces dimensionality",
+      "A network for time series prediction"
+    ],
+    "answer": "Two networks competing: generator creates fake data, discriminator detects fake data",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "GANs consist of two neural networks competing against each other: a generator that creates fake data and a discriminator that tries to distinguish real from fake data.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_009",
+    "question": "What is a convolutional layer in CNN?",
+    "options": [
+      "A layer that applies filters to detect features in input data",
+      "A layer that reduces dimensionality",
+      "A layer that normalizes inputs",
+      "A layer that prevents overfitting"
+    ],
+    "answer": "A layer that applies filters to detect features in input data",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Convolutional layers apply learnable filters (kernels) to input data to detect features like edges, textures, and patterns through convolution operations.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_010",
+    "question": "What is the purpose of pooling layers in CNNs?",
+    "options": [
+      "To reduce spatial dimensions and computational complexity",
+      "To increase the number of parameters",
+      "To add non-linearity",
+      "To normalize activations"
+    ],
+    "answer": "To reduce spatial dimensions and computational complexity",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Pooling layers downsample feature maps, reducing spatial dimensions while retaining important information, which decreases computational load and helps prevent overfitting.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_011",
+    "question": "What is the exploding gradient problem?",
+    "options": [
+      "When gradients become exponentially large during backpropagation",
+      "When gradients become too small",
+      "When the learning rate is too low",
+      "When there are too many layers"
+    ],
+    "answer": "When gradients become exponentially large during backpropagation",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "The exploding gradient problem occurs when gradients grow exponentially large as they propagate backward, causing unstable training and parameter updates.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_012",
+    "question": "What is the purpose of activation functions?",
+    "options": [
+      "To introduce non-linearity into the network",
+      "To reduce overfitting",
+      "To normalize inputs",
+      "To speed up training"
+    ],
+    "answer": "To introduce non-linearity into the network",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Activation functions introduce non-linearity, allowing neural networks to learn complex patterns and approximate non-linear functions.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_013",
+    "question": "What is the difference between ReLU and Sigmoid activation functions?",
+    "options": [
+      "ReLU outputs 0 for negative inputs, Sigmoid outputs values between 0 and 1",
+      "ReLU is slower than Sigmoid",
+      "Sigmoid prevents vanishing gradients better than ReLU",
+      "There is no difference"
+    ],
+    "answer": "ReLU outputs 0 for negative inputs, Sigmoid outputs values between 0 and 1",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "ReLU (Rectified Linear Unit) outputs max(0,x), while Sigmoid outputs 1/(1+e^(-x)). ReLU helps mitigate vanishing gradients and is computationally efficient.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_014",
+    "question": "What is an autoencoder?",
+    "options": [
+      "A neural network that learns to compress and reconstruct data",
+      "A network for classification tasks",
+      "A network for generating new data",
+      "A network for reinforcement learning"
+    ],
+    "answer": "A neural network that learns to compress and reconstruct data",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "An autoencoder consists of an encoder that compresses input data into a lower-dimensional representation and a decoder that reconstructs the original data.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_015",
+    "question": "What is the purpose of skip connections in ResNet?",
+    "options": [
+      "To allow gradients to flow directly to earlier layers, enabling deeper networks",
+      "To reduce the number of parameters",
+      "To speed up training",
+      "To prevent overfitting"
+    ],
+    "answer": "To allow gradients to flow directly to earlier layers, enabling deeper networks",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Skip connections (residual connections) allow gradients to bypass layers, solving the vanishing gradient problem and enabling training of very deep networks.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_016",
+    "question": "What is the difference between CNN and fully connected layers?",
+    "options": [
+      "CNN layers use local connectivity and weight sharing, FC layers connect all neurons",
+      "CNN layers are faster than FC layers",
+      "FC layers are only for output",
+      "There is no difference"
+    ],
+    "answer": "CNN layers use local connectivity and weight sharing, FC layers connect all neurons",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "CNN layers use local receptive fields and share weights across spatial locations, while fully connected layers connect every input to every output neuron.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_017",
+    "question": "What is gradient clipping?",
+    "options": [
+      "A technique to prevent exploding gradients by limiting gradient magnitude",
+      "A method to speed up training",
+      "A way to reduce model size",
+      "A technique for data preprocessing"
+    ],
+    "answer": "A technique to prevent exploding gradients by limiting gradient magnitude",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Gradient clipping caps the magnitude of gradients during backpropagation to prevent exploding gradients and stabilize training.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_018",
+    "question": "What is the purpose of the softmax function?",
+    "options": [
+      "To convert logits into probability distribution for multiclass classification",
+      "To introduce non-linearity",
+      "To normalize inputs",
+      "To prevent overfitting"
+    ],
+    "answer": "To convert logits into probability distribution for multiclass classification",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Softmax converts raw output scores (logits) into a probability distribution where all values sum to 1, commonly used in multiclass classification.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_019",
+    "question": "What is a recurrent neural network (RNN)?",
+    "options": [
+      "A network with connections that create loops, allowing information to persist",
+      "A network that only processes images",
+      "A network without hidden layers",
+      "A network that uses only linear activations"
+    ],
+    "answer": "A network with connections that create loops, allowing information to persist",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "RNNs have recurrent connections that allow information to flow from one step to the next, making them suitable for sequential data processing.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_020",
+    "question": "What is the difference between GRU and LSTM?",
+    "options": [
+      "GRU has fewer gates and parameters than LSTM but similar performance",
+      "GRU is always better than LSTM",
+      "LSTM is faster than GRU",
+      "They are exactly the same"
+    ],
+    "answer": "GRU has fewer gates and parameters than LSTM but similar performance",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "GRU (Gated Recurrent Unit) has 2 gates vs LSTM's 3 gates, making it simpler and faster while achieving comparable performance on many tasks.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_021",
+    "question": "What is data normalization in deep learning?",
+    "options": [
+      "Scaling input features to have similar ranges for stable training",
+      "Removing outliers from data",
+      "Increasing dataset size",
+      "Converting data to different formats"
+    ],
+    "answer": "Scaling input features to have similar ranges for stable training",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Data normalization scales features to similar ranges (e.g., 0-1 or mean=0, std=1) to ensure stable gradient descent and faster convergence.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_022",
+    "question": "What is the purpose of weight initialization?",
+    "options": [
+      "To set initial parameter values for stable and efficient training",
+      "To prevent overfitting",
+      "To speed up inference",
+      "To reduce model size"
+    ],
+    "answer": "To set initial parameter values for stable and efficient training",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Proper weight initialization (e.g., Xavier, He initialization) helps prevent vanishing/exploding gradients and ensures efficient training convergence.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_023",
+    "question": "What is a loss function?",
+    "options": [
+      "A function that measures the difference between predicted and actual values",
+      "A function that prevents overfitting",
+      "A function that normalizes inputs",
+      "A function that speeds up training"
+    ],
+    "answer": "A function that measures the difference between predicted and actual values",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Loss functions quantify how well the model's predictions match the true values, providing the objective to minimize during training.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_024",
+    "question": "What is the difference between training and inference modes?",
+    "options": [
+      "Training mode updates weights, inference mode makes predictions with fixed weights",
+      "Training mode is faster than inference mode",
+      "Inference mode uses more memory than training mode",
+      "There is no difference"
+    ],
+    "answer": "Training mode updates weights, inference mode makes predictions with fixed weights",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Training mode involves forward pass, loss calculation, and backpropagation to update weights. Inference mode only does forward pass with frozen weights.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_025",
+    "question": "What is fine-tuning in deep learning?",
+    "options": [
+      "Adjusting pre-trained model weights for a new task with smaller learning rate",
+      "Training a model from scratch",
+      "Reducing model size",
+      "Increasing training data"
+    ],
+    "answer": "Adjusting pre-trained model weights for a new task with smaller learning rate",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Fine-tuning involves taking a pre-trained model and continuing training on a new dataset, typically with a smaller learning rate to preserve learned features.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_026",
+    "question": "What is the purpose of regularization techniques?",
+    "options": [
+      "To prevent overfitting and improve generalization",
+      "To speed up training",
+      "To increase model capacity",
+      "To reduce inference time"
+    ],
+    "answer": "To prevent overfitting and improve generalization",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Regularization techniques (dropout, L1/L2, batch norm) help prevent overfitting by constraining model complexity and improving generalization to unseen data.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_027",
+    "question": "What is a learning rate scheduler?",
+    "options": [
+      "A technique to adjust learning rate during training for better convergence",
+      "A method to schedule training batches",
+      "A way to organize training data",
+      "A technique to reduce model size"
+    ],
+    "answer": "A technique to adjust learning rate during training for better convergence",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Learning rate schedulers dynamically adjust the learning rate during training (e.g., decay, step, cosine) to improve convergence and final performance.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_028",
+    "question": "What is the difference between epoch, batch, and iteration?",
+    "options": [
+      "Epoch = full dataset pass, Batch = subset of data, Iteration = one batch processing",
+      "They all mean the same thing",
+      "Epoch is smallest, iteration is largest",
+      "Batch contains multiple epochs"
+    ],
+    "answer": "Epoch = full dataset pass, Batch = subset of data, Iteration = one batch processing",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "An epoch is one complete pass through the entire dataset, a batch is a subset of data processed together, and an iteration is processing one batch.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_029",
+    "question": "What is the purpose of data augmentation in deep learning?",
+    "options": [
+      "To artificially increase dataset size and improve model robustness",
+      "To reduce training time",
+      "To compress data",
+      "To normalize data"
+    ],
+    "answer": "To artificially increase dataset size and improve model robustness",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Data augmentation applies transformations (rotation, scaling, flipping) to training data, increasing dataset diversity and improving model generalization.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_030",
+    "question": "What is a discriminator in GANs?",
+    "options": [
+      "A network that tries to distinguish between real and generated data",
+      "A network that generates new data",
+      "A network that compresses data",
+      "A network that classifies data into categories"
+    ],
+    "answer": "A network that tries to distinguish between real and generated data",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "In GANs, the discriminator is trained to distinguish between real data and fake data generated by the generator, creating an adversarial training process.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_031",
+    "question": "What is the purpose of embedding layers?",
+    "options": [
+      "To convert discrete tokens into dense vector representations",
+      "To reduce model size",
+      "To speed up training",
+      "To prevent overfitting"
+    ],
+    "answer": "To convert discrete tokens into dense vector representations",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Embedding layers map discrete tokens (words, categories) to dense, learnable vector representations that capture semantic relationships.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_032",
+    "question": "What is the transformer architecture's main innovation?",
+    "options": [
+      "Self-attention mechanism that processes sequences in parallel",
+      "Using only convolutional layers",
+      "Eliminating all non-linear activations",
+      "Using only recurrent connections"
+    ],
+    "answer": "Self-attention mechanism that processes sequences in parallel",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Transformers use self-attention to process all positions in a sequence simultaneously, enabling parallelization and capturing long-range dependencies more effectively than RNNs.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_033",
+    "question": "What is the key innovation of the Transformer architecture?",
+    "options": [
+      "Self-attention mechanism that processes sequences in parallel",
+      "Using only convolutional layers",
+      "Eliminating all neural network layers",
+      "Using only recurrent connections"
+    ],
+    "answer": "Self-attention mechanism that processes sequences in parallel",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Transformers introduced self-attention mechanisms that allow parallel processing of sequences, eliminating the need for recurrent connections and enabling better long-range dependencies.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_034",
+    "question": "What does the 'attention is all you need' paper refer to?",
+    "options": [
+      "Transformers can achieve state-of-the-art results using only attention mechanisms",
+      "Attention is the only thing humans need",
+      "CNNs only need attention layers",
+      "RNNs work better with attention"
+    ],
+    "answer": "Transformers can achieve state-of-the-art results using only attention mechanisms",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "The seminal Transformer paper showed that attention mechanisms alone, without recurrence or convolution, can achieve superior performance on sequence-to-sequence tasks.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_035",
+    "question": "What are the main components of a Transformer encoder layer?",
+    "options": [
+      "Multi-head self-attention and feed-forward network",
+      "LSTM and attention",
+      "Convolution and pooling",
+      "Only self-attention"
+    ],
+    "answer": "Multi-head self-attention and feed-forward network",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Each Transformer encoder layer consists of a multi-head self-attention mechanism followed by a position-wise feed-forward network, both with residual connections and layer normalization.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_036",
+    "question": "What is the purpose of positional encoding in Transformers?",
+    "options": [
+      "To provide information about token positions since attention has no inherent order",
+      "To encode the meaning of words",
+      "To reduce computational complexity",
+      "To normalize the input"
+    ],
+    "answer": "To provide information about token positions since attention has no inherent order",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Since self-attention is permutation-invariant, positional encodings are added to input embeddings to give the model information about the position of tokens in the sequence.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_037",
+    "question": "What is multi-head attention?",
+    "options": [
+      "Running multiple attention functions in parallel with different learned projections",
+      "Attention with multiple input sequences",
+      "Attention that looks at multiple time steps",
+      "Attention with multiple output heads"
+    ],
+    "answer": "Running multiple attention functions in parallel with different learned projections",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions by running multiple attention heads in parallel.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_038",
+    "question": "What is the difference between encoder and decoder in Transformers?",
+    "options": [
+      "Encoder uses self-attention, decoder uses masked self-attention and cross-attention",
+      "Encoder is for input, decoder is for output",
+      "Encoder is bidirectional, decoder is unidirectional",
+      "No difference, they are identical"
+    ],
+    "answer": "Encoder uses self-attention, decoder uses masked self-attention and cross-attention",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "The encoder uses bidirectional self-attention, while the decoder uses masked self-attention (to prevent looking at future tokens) and cross-attention to attend to encoder outputs.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_039",
+    "question": "What is BERT?",
+    "options": [
+      "Bidirectional Encoder Representations from Transformers",
+      "Binary Encoded Recurrent Transformers",
+      "Basic Embedding Representation Technique",
+      "Bidirectional Embedding Recurrent Technique"
+    ],
+    "answer": "Bidirectional Encoder Representations from Transformers",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "BERT is a pre-trained Transformer model that uses bidirectional training to understand context from both left and right directions in text.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_040",
+    "question": "What is the key difference between BERT and GPT?",
+    "options": [
+      "BERT is bidirectional encoder-only, GPT is unidirectional decoder-only",
+      "BERT is for classification, GPT is for generation",
+      "BERT uses attention, GPT uses convolution",
+      "BERT is smaller than GPT"
+    ],
+    "answer": "BERT is bidirectional encoder-only, GPT is unidirectional decoder-only",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "BERT uses only the encoder part of Transformers with bidirectional attention, while GPT uses only the decoder part with causal (left-to-right) attention for autoregressive generation.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_041",
+    "question": "What is masked language modeling in BERT?",
+    "options": [
+      "Randomly masking tokens and predicting them from context",
+      "Masking the entire input sequence",
+      "Using masks to hide attention weights",
+      "Masking the output layer"
+    ],
+    "answer": "Randomly masking tokens and predicting them from context",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "BERT's pre-training involves randomly masking 15% of input tokens and training the model to predict these masked tokens using bidirectional context.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_042",
+    "question": "What is the purpose of the [CLS] token in BERT?",
+    "options": [
+      "To provide a representation of the entire sequence for classification tasks",
+      "To classify individual words",
+      "To mark the end of a sentence",
+      "To separate different sentences"
+    ],
+    "answer": "To provide a representation of the entire sequence for classification tasks",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "The [CLS] token is added at the beginning of every sequence and its final hidden state is used as the aggregate sequence representation for classification tasks.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_043",
+    "question": "What is the scaled dot-product attention formula?",
+    "options": [
+      "Attention(Q,K,V) = softmax(QK^T/√d_k)V",
+      "Attention(Q,K,V) = softmax(QKV)",
+      "Attention(Q,K,V) = QK^TV",
+      "Attention(Q,K,V) = softmax(Q+K)V"
+    ],
+    "answer": "Attention(Q,K,V) = softmax(QK^T/√d_k)V",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Scaled dot-product attention computes attention weights by taking the dot product of queries and keys, scaling by √d_k, applying softmax, then multiplying by values.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_044",
+    "question": "Why is scaling by √d_k important in attention?",
+    "options": [
+      "To prevent the dot products from becoming too large and pushing softmax into saturation",
+      "To normalize the input embeddings",
+      "To reduce computational complexity",
+      "To improve gradient flow"
+    ],
+    "answer": "To prevent the dot products from becoming too large and pushing softmax into saturation",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Scaling prevents large dot products that would cause softmax to have extremely small gradients, which would slow down learning.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_045",
+    "question": "What is a Large Language Model (LLM)?",
+    "options": [
+      "A neural network trained on massive text datasets to understand and generate human language",
+      "A model that only works with large datasets",
+      "A model with many layers but small parameters",
+      "A model that processes only long sentences"
+    ],
+    "answer": "A neural network trained on massive text datasets to understand and generate human language",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "LLMs are neural networks, typically based on Transformer architecture, trained on vast amounts of text data to understand context and generate coherent human-like text.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_046",
+    "question": "What is the difference between pre-training and fine-tuning in LLMs?",
+    "options": [
+      "Pre-training learns general language patterns, fine-tuning adapts to specific tasks",
+      "Pre-training is faster than fine-tuning",
+      "Fine-tuning uses more data than pre-training",
+      "Pre-training and fine-tuning are the same process"
+    ],
+    "answer": "Pre-training learns general language patterns, fine-tuning adapts to specific tasks",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Pre-training involves learning language representations from large unlabeled text, while fine-tuning adapts the pre-trained model to specific downstream tasks with labeled data.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_047",
+    "question": "What is few-shot learning in the context of LLMs?",
+    "options": [
+      "Learning to perform tasks with only a few examples provided in the prompt",
+      "Training models with few parameters",
+      "Learning that takes only a few seconds",
+      "Training with few epochs"
+    ],
+    "answer": "Learning to perform tasks with only a few examples provided in the prompt",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Few-shot learning allows LLMs to perform new tasks by providing just a few examples in the input prompt, without updating model parameters.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_048",
+    "question": "What is prompt engineering?",
+    "options": [
+      "Designing input prompts to elicit desired responses from language models",
+      "Engineering hardware for prompts",
+      "Creating prompts for engineering problems",
+      "Building prompt databases"
+    ],
+    "answer": "Designing input prompts to elicit desired responses from language models",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Prompt engineering involves crafting input text to guide language models toward producing specific, desired outputs without changing the model itself.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_049",
+    "question": "What is in-context learning?",
+    "options": [
+      "Learning to perform tasks from examples provided within the input context",
+      "Learning within a specific context window",
+      "Learning that happens during inference",
+      "Learning from contextual embeddings"
+    ],
+    "answer": "Learning to perform tasks from examples provided within the input context",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "In-context learning is the ability of LLMs to learn and perform new tasks by conditioning on examples provided in the input prompt, without parameter updates.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_050",
+    "question": "What is the purpose of RLHF (Reinforcement Learning from Human Feedback)?",
+    "options": [
+      "To align language model outputs with human preferences and values",
+      "To make models learn faster",
+      "To reduce model size",
+      "To improve computational efficiency"
+    ],
+    "answer": "To align language model outputs with human preferences and values",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "RLHF uses human feedback to train reward models that guide language models to generate outputs that are more helpful, harmless, and honest according to human preferences.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_051",
+    "question": "What is chain-of-thought prompting?",
+    "options": [
+      "Prompting models to show step-by-step reasoning in their responses",
+      "Linking multiple prompts together",
+      "Using chains to connect thoughts",
+      "Prompting about thought processes"
+    ],
+    "answer": "Prompting models to show step-by-step reasoning in their responses",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Chain-of-thought prompting encourages language models to break down complex problems into intermediate reasoning steps, improving performance on complex tasks.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_052",
+    "question": "What is the context window in LLMs?",
+    "options": [
+      "The maximum number of tokens the model can process in a single input",
+      "A window showing the context",
+      "The time window for processing",
+      "The memory window of the model"
+    ],
+    "answer": "The maximum number of tokens the model can process in a single input",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "The context window defines the maximum sequence length that a language model can process at once, limiting how much text it can consider for generating responses.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_053",
+    "question": "What is emergent behavior in large language models?",
+    "options": [
+      "Capabilities that appear at scale but weren't explicitly trained for",
+      "Behaviors that emerge during training",
+      "Emergency responses from models",
+      "Behaviors that emerge from prompts"
+    ],
+    "answer": "Capabilities that appear at scale but weren't explicitly trained for",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Emergent behaviors are capabilities that large models exhibit (like few-shot learning or reasoning) that weren't directly trained for but emerge from scale and training on diverse data.",
+    "topic": "Deep Learning"
+  },
+  {
+    "id": "dl_054",
+    "question": "What is model alignment in AI?",
+    "options": [
+      "Ensuring AI systems behave according to human values and intentions",
+      "Aligning model parameters",
+      "Aligning data with models",
+      "Aligning multiple models together"
+    ],
+    "answer": "Ensuring AI systems behave according to human values and intentions",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Model alignment refers to the challenge of ensuring that AI systems pursue goals and exhibit behaviors that are aligned with human values and intentions.",
+    "topic": "Deep Learning"
+  }
+]

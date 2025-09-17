@@ -1,0 +1,482 @@
+[
+  {
+    "id": "distributed1",
+    "question": "What is the CAP theorem in distributed systems?",
+    "options": [
+      "A system can only guarantee two out of three: Consistency, Availability, and Partition tolerance",
+      "A system must have all three: Consistency, Availability, and Performance",
+      "A system can have all three: Consistency, Availability, and Partition tolerance",
+      "A system must choose between Consistency and Performance"
+    ],
+    "answer": "A system can only guarantee two out of three: Consistency, Availability, and Partition tolerance",
+    "difficulty": "medium",
+    "time_limit": 25,
+    "explanation": "The CAP theorem states that a distributed system can only provide two out of three guarantees: Consistency (all nodes see the same data at the same time), Availability (every request receives a response), and Partition tolerance (the system continues to operate despite network failures).",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "distributed2",
+    "question": "What is the purpose of a consensus algorithm in distributed systems?",
+    "options": [
+      "To increase network speed",
+      "To achieve agreement on a single data value among distributed processes",
+      "To compress data for storage",
+      "To encrypt communication between nodes"
+    ],
+    "answer": "To achieve agreement on a single data value among distributed processes",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Consensus algorithms are used in distributed systems to ensure that all nodes in the system agree on a single source of truth, even in the presence of failures. Examples include Paxos and Raft.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "distributed3",
+    "question": "What is eventual consistency?",
+    "options": [
+      "A consistency model where all nodes see the same data at the same time",
+      "A consistency model where updates will propagate to all nodes eventually",
+      "A model where data is never consistent across nodes",
+      "A model used only in single-node systems"
+    ],
+    "answer": "A consistency model where updates will propagate to all nodes eventually",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Eventual consistency is a consistency model used in distributed systems where if no new updates are made to a given data item, eventually all accesses to that item will return the last updated value. This model allows for better availability and performance at the cost of temporary inconsistencies.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "distributed4",
+    "question": "What is horizontal scaling vs vertical scaling?",
+    "options": [
+      "Horizontal scaling adds more machines, vertical scaling adds more power to existing machines",
+      "Horizontal scaling is faster than vertical scaling",
+      "Vertical scaling adds more machines, horizontal scaling adds more power",
+      "There is no difference between them"
+    ],
+    "answer": "Horizontal scaling adds more machines, vertical scaling adds more power to existing machines",
+    "difficulty": "easy",
+    "time_limit": 18,
+    "explanation": "Horizontal scaling (scale out) involves adding more servers to handle increased load, while vertical scaling (scale up) involves adding more CPU, RAM, or storage to existing servers. Horizontal scaling is generally preferred for distributed systems.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "distributed5",
+    "question": "What is a distributed hash table (DHT)?",
+    "options": [
+      "A hash table that stores passwords securely",
+      "A decentralized distributed system that provides lookup service similar to a hash table",
+      "A table used only for database indexing",
+      "A method for encrypting data in transit"
+    ],
+    "answer": "A decentralized distributed system that provides lookup service similar to a hash table",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "A DHT is a distributed system that provides a lookup service similar to a hash table. Key-value pairs are stored across multiple nodes, and any participating node can efficiently retrieve the value associated with a given key.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "distributed6",
+    "question": "What is the Byzantine Generals Problem?",
+    "options": [
+      "A problem about military strategy",
+      "A problem of achieving consensus in the presence of malicious actors",
+      "A problem about network latency",
+      "A problem about data compression"
+    ],
+    "answer": "A problem of achieving consensus in the presence of malicious actors",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "The Byzantine Generals Problem illustrates the difficulty of achieving consensus in distributed systems when some nodes may be unreliable or malicious. It's fundamental to understanding fault tolerance in distributed systems.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "distributed7",
+    "question": "What is load balancing in distributed systems?",
+    "options": [
+      "Distributing incoming requests across multiple servers",
+      "Balancing the physical weight of server hardware",
+      "Equalizing power consumption across data centers",
+      "Synchronizing clocks across all nodes"
+    ],
+    "answer": "Distributing incoming requests across multiple servers",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Load balancing distributes incoming network traffic or computational workload across multiple servers to ensure no single server becomes overwhelmed, improving system performance and reliability.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "distributed8",
+    "question": "What is the difference between synchronous and asynchronous replication?",
+    "options": [
+      "Synchronous waits for all replicas to confirm, asynchronous doesn't wait",
+      "Asynchronous is always faster than synchronous",
+      "Synchronous uses more bandwidth than asynchronous",
+      "There is no difference in distributed systems"
+    ],
+    "answer": "Synchronous waits for all replicas to confirm, asynchronous doesn't wait",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Synchronous replication waits for acknowledgment from all replica nodes before confirming a write operation, ensuring consistency but potentially higher latency. Asynchronous replication doesn't wait, offering better performance but potential temporary inconsistency.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_009",
+    "question": "What does ACID stand for in database systems?",
+    "options": [
+      "Atomicity, Consistency, Isolation, Durability",
+      "Availability, Consistency, Integrity, Distribution",
+      "Asynchronous, Concurrent, Independent, Distributed",
+      "Access, Control, Identity, Data"
+    ],
+    "answer": "Atomicity, Consistency, Isolation, Durability",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "ACID properties ensure reliable database transactions: Atomicity (all-or-nothing), Consistency (valid state), Isolation (concurrent safety), Durability (permanent storage).",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_010",
+    "question": "What is the difference between horizontal and vertical scaling?",
+    "options": [
+      "Horizontal adds more machines, vertical adds more power to existing machines",
+      "Vertical is always cheaper than horizontal",
+      "Horizontal only works with databases",
+      "Vertical scaling is unlimited"
+    ],
+    "answer": "Horizontal adds more machines, vertical adds more power to existing machines",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Horizontal scaling (scale out) adds more servers, while vertical scaling (scale up) increases the capacity of existing servers.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_011",
+    "question": "What is eventual consistency?",
+    "options": [
+      "System will become consistent over time if no new updates are made",
+      "System is always consistent",
+      "System never becomes consistent",
+      "Consistency is checked eventually"
+    ],
+    "answer": "System will become consistent over time if no new updates are made",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Eventual consistency guarantees that if no new updates are made, all replicas will eventually converge to the same value.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_012",
+    "question": "What is the two-phase commit protocol?",
+    "options": [
+      "A protocol ensuring all nodes agree to commit or abort a distributed transaction",
+      "A protocol with exactly two phases",
+      "A method for committing code changes",
+      "A database backup strategy"
+    ],
+    "answer": "A protocol ensuring all nodes agree to commit or abort a distributed transaction",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Two-phase commit ensures atomicity in distributed transactions through prepare and commit phases, but can block if coordinator fails.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_013",
+    "question": "What is a vector clock?",
+    "options": [
+      "A logical clock that captures causal relationships between events in distributed systems",
+      "A clock that points in multiple directions",
+      "A physical clock with multiple time zones",
+      "A clock used for vector calculations"
+    ],
+    "answer": "A logical clock that captures causal relationships between events in distributed systems",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Vector clocks track causality between events in distributed systems, allowing detection of concurrent events and causal ordering.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_014",
+    "question": "What is database sharding?",
+    "options": [
+      "Partitioning data across multiple databases based on a shard key",
+      "Breaking databases into small pieces",
+      "Encrypting database content",
+      "Backing up databases regularly"
+    ],
+    "answer": "Partitioning data across multiple databases based on a shard key",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Sharding distributes data across multiple database instances using a shard key to determine which shard contains specific data.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_015",
+    "question": "What is the split-brain problem?",
+    "options": [
+      "When network partition causes multiple nodes to think they are the leader",
+      "When a computer's CPU is divided",
+      "When brain surgery affects computing",
+      "When two algorithms conflict"
+    ],
+    "answer": "When network partition causes multiple nodes to think they are the leader",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Split-brain occurs when network partitions cause multiple nodes to believe they are the primary, potentially leading to data inconsistency.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_016",
+    "question": "What is a quorum in distributed systems?",
+    "options": [
+      "Minimum number of nodes required to perform an operation",
+      "Maximum number of nodes in a cluster",
+      "A type of consensus algorithm",
+      "A voting mechanism for users"
+    ],
+    "answer": "Minimum number of nodes required to perform an operation",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "A quorum ensures that operations require agreement from a majority of nodes, preventing split-brain scenarios and maintaining consistency.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_017",
+    "question": "What is the difference between synchronous and asynchronous communication?",
+    "options": [
+      "Synchronous blocks until response, asynchronous doesn't wait for response",
+      "Asynchronous is always faster",
+      "Synchronous only works locally",
+      "There is no difference"
+    ],
+    "answer": "Synchronous blocks until response, asynchronous doesn't wait for response",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Synchronous communication blocks the sender until receiving a response, while asynchronous allows the sender to continue without waiting.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_018",
+    "question": "What is a Content Delivery Network (CDN)?",
+    "options": [
+      "A geographically distributed network of servers that cache content closer to users",
+      "A network for delivering content to developers",
+      "A database for storing content",
+      "A protocol for content transfer"
+    ],
+    "answer": "A geographically distributed network of servers that cache content closer to users",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "CDNs improve performance by caching content at edge servers closer to users, reducing latency and bandwidth usage.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_019",
+    "question": "What is the circuit breaker pattern?",
+    "options": [
+      "A pattern that prevents cascading failures by stopping calls to failing services",
+      "A pattern for breaking electrical circuits",
+      "A method for breaking infinite loops",
+      "A security pattern for access control"
+    ],
+    "answer": "A pattern that prevents cascading failures by stopping calls to failing services",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Circuit breaker pattern monitors service failures and temporarily stops requests to failing services to prevent cascade failures.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_020",
+    "question": "What is microservices architecture?",
+    "options": [
+      "Architecture where application is built as a collection of small, independent services",
+      "Architecture for very small applications",
+      "Architecture using microscopic components",
+      "Architecture with minimal features"
+    ],
+    "answer": "Architecture where application is built as a collection of small, independent services",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Microservices architecture decomposes applications into small, loosely coupled services that can be developed and deployed independently.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_021",
+    "question": "What is the Raft consensus algorithm?",
+    "options": [
+      "A consensus algorithm that elects a leader to manage log replication",
+      "An algorithm for building rafts",
+      "A sorting algorithm for distributed data",
+      "A load balancing algorithm"
+    ],
+    "answer": "A consensus algorithm that elects a leader to manage log replication",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Raft is a consensus algorithm that elects a leader to manage replicated logs, ensuring consistency across distributed nodes.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_022",
+    "question": "What is BASE in distributed systems?",
+    "options": [
+      "Basically Available, Soft state, Eventual consistency",
+      "Basic, Available, Secure, Efficient",
+      "Backup, Archive, Store, Execute",
+      "Binary, Atomic, Synchronized, Encrypted"
+    ],
+    "answer": "Basically Available, Soft state, Eventual consistency",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "BASE is an alternative to ACID for distributed systems, emphasizing availability and eventual consistency over strict consistency.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_023",
+    "question": "What is service discovery?",
+    "options": [
+      "Mechanism for services to find and communicate with each other dynamically",
+      "Process of discovering new services to build",
+      "Method for finding bugs in services",
+      "Tool for monitoring service performance"
+    ],
+    "answer": "Mechanism for services to find and communicate with each other dynamically",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Service discovery allows services to locate and communicate with each other without hardcoded addresses, essential in dynamic environments.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_024",
+    "question": "What is the bulkhead pattern?",
+    "options": [
+      "Isolating critical resources to prevent failure propagation",
+      "A pattern for bulk data operations",
+      "A method for building ship compartments",
+      "A caching strategy"
+    ],
+    "answer": "Isolating critical resources to prevent failure propagation",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Bulkhead pattern isolates critical resources (like thread pools) to prevent failures in one area from affecting the entire system.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_025",
+    "question": "What is MapReduce?",
+    "options": [
+      "A programming model for processing large datasets across distributed clusters",
+      "A method for reducing map sizes",
+      "A technique for mapping network routes",
+      "A database indexing strategy"
+    ],
+    "answer": "A programming model for processing large datasets across distributed clusters",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "MapReduce divides large datasets into smaller chunks, processes them in parallel (map), then combines results (reduce).",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_026",
+    "question": "What is strong consistency?",
+    "options": [
+      "All nodes see the same data at the same time",
+      "Data is strongly encrypted",
+      "System has strong performance",
+      "Nodes are strongly connected"
+    ],
+    "answer": "All nodes see the same data at the same time",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Strong consistency ensures that all nodes in a distributed system see the same data simultaneously after any update.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_027",
+    "question": "What is the saga pattern?",
+    "options": [
+      "A pattern for managing distributed transactions through compensating actions",
+      "A pattern for telling long stories",
+      "A method for saga database operations",
+      "A pattern for sequential processing"
+    ],
+    "answer": "A pattern for managing distributed transactions through compensating actions",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Saga pattern manages distributed transactions by breaking them into smaller steps with compensating actions to undo changes if needed.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_028",
+    "question": "What is a distributed hash table (DHT)?",
+    "options": [
+      "A hash table distributed across multiple nodes in a network",
+      "A hash table with distributed keys",
+      "A table for distributing hash functions",
+      "A hash table stored in multiple files"
+    ],
+    "answer": "A hash table distributed across multiple nodes in a network",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "DHTs distribute hash table functionality across multiple nodes, providing scalable key-value storage without central coordination.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_029",
+    "question": "What is graceful degradation?",
+    "options": [
+      "System continues operating with reduced functionality when components fail",
+      "System shuts down gracefully",
+      "Performance degrades over time",
+      "System becomes more polite"
+    ],
+    "answer": "System continues operating with reduced functionality when components fail",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Graceful degradation allows systems to maintain core functionality even when some components fail, rather than complete failure.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_030",
+    "question": "What is the difference between master-slave and master-master replication?",
+    "options": [
+      "Master-slave has one writer, master-master allows multiple writers",
+      "Master-master is always faster",
+      "Master-slave only works with databases",
+      "There is no difference"
+    ],
+    "answer": "Master-slave has one writer, master-master allows multiple writers",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Master-slave replication has one primary node for writes, while master-master allows writes to multiple nodes with conflict resolution.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_031",
+    "question": "What is event sourcing?",
+    "options": [
+      "Storing all changes as a sequence of events rather than current state",
+      "Finding the source of events",
+      "Creating events from external sources",
+      "Monitoring system events"
+    ],
+    "answer": "Storing all changes as a sequence of events rather than current state",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Event sourcing persists all state changes as events, allowing reconstruction of any past state and providing complete audit trails.",
+    "topic": "Distributed Systems"
+  },
+  {
+    "id": "ds_032",
+    "question": "What is a service mesh?",
+    "options": [
+      "Infrastructure layer that handles service-to-service communication",
+      "A mesh network of services",
+      "A tool for meshing services together",
+      "A pattern for service organization"
+    ],
+    "answer": "Infrastructure layer that handles service-to-service communication",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Service mesh provides infrastructure for service communication, including load balancing, security, observability, and traffic management.",
+    "topic": "Distributed Systems"
+  }
+]

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results - Technical Quiz App</title>
+    <link rel="stylesheet" href="results-styles.css">
+</head>
+<body>
+    <div class="results-container">
+        <div class="results-header">
+            <h1>Quiz Results</h1>
+            <div class="score-summary">
+                <div class="total-score">
+                    <span id="scoreText">0/0</span>
+                    <span class="score-label">Total Score</span>
+                </div>
+                <div class="percentage">
+                    <span id="percentageText">0%</span>
+                    <span class="score-label">Accuracy</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="topic-breakdown">
+            <h2>Performance by Topic</h2>
+            <div id="topicStats" class="topic-stats"></div>
+        </div>
+        
+        <div class="question-review">
+            <h2>Question Review</h2>
+            <div id="questionsList" class="questions-list"></div>
+        </div>
+        
+        <div class="actions">
+            <button id="retakeBtn" class="action-btn primary">Retake Quiz</button>
+            <button id="homeBtn" class="action-btn secondary">Back to Home</button>
+        </div>
+    </div>
+    <script src="results.js"></script>
+</body>
+</html>

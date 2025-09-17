@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Deselect All</title>
+</head>
+<body>
+    <div class="topics-container">
+        <input type="checkbox" id="test1" checked>
+        <label for="test1">Test 1</label>
+        <input type="checkbox" id="test2" checked>
+        <label for="test2">Test 2</label>
+    </div>
+    
+    <button id="deselectAllBtn">Deselect All</button>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const deselectAllBtn = document.getElementById('deselectAllBtn');
+            
+            if (deselectAllBtn) {
+                deselectAllBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    console.log('Deselect all clicked');
+                    const checkboxes = document.querySelectorAll('.topics-container input[type="checkbox"]');
+                    console.log('Found checkboxes:', checkboxes.length);
+                    checkboxes.forEach(checkbox => {
+                        console.log('Unchecking:', checkbox.id);
+                        checkbox.checked = false;
+                    });
+                });
+            } else {
+                console.log('Button not found');
+            }
+        });
+    </script>
+</body>
+</html>

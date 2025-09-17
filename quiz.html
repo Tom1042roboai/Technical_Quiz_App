@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Technical Quiz App</title>
+    <link rel="stylesheet" href="quiz-styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <div class="progress-info">
+                <span id="questionCounter">Question 1 of 96</span>
+                <span id="timer">25s</span>
+            </div>
+            <button id="quitBtn" class="quit-btn">Quit Quiz</button>
+        </div>
+        
+        <div class="progress-bar">
+            <div id="progressFill" class="progress-fill"></div>
+        </div>
+        
+        <div class="question-section">
+            <h2 id="questionText">Loading question...</h2>
+            <div class="topic-badge" id="topicBadge">Topic</div>
+        </div>
+        
+        <div class="options-section">
+            <button class="option-btn" id="option0">Option A</button>
+            <button class="option-btn" id="option1">Option B</button>
+            <button class="option-btn" id="option2">Option C</button>
+            <button class="option-btn" id="option3">Option D</button>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

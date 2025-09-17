@@ -1,0 +1,632 @@
+[
+  {
+    "id": "ml_001",
+    "question": "What is the main difference between supervised and unsupervised learning?",
+    "options": [
+      "Supervised learning uses labeled data, unsupervised learning uses unlabeled data",
+      "Supervised learning is faster than unsupervised learning",
+      "Supervised learning uses more data than unsupervised learning",
+      "There is no difference between them"
+    ],
+    "answer": "Supervised learning uses labeled data, unsupervised learning uses unlabeled data",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Supervised learning requires labeled training data to learn patterns, while unsupervised learning finds patterns in unlabeled data without knowing the correct outputs.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_002",
+    "question": "What does bias-variance tradeoff mean in machine learning?",
+    "options": [
+      "The balance between model complexity and training time",
+      "The balance between underfitting (high bias) and overfitting (high variance)",
+      "The balance between accuracy and precision",
+      "The balance between training and testing data"
+    ],
+    "answer": "The balance between underfitting (high bias) and overfitting (high variance)",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Bias-variance tradeoff refers to the balance between a model's ability to minimize bias (underfitting) and variance (overfitting) to achieve optimal predictive performance.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_003",
+    "question": "Which evaluation metric is most appropriate for imbalanced datasets?",
+    "options": [
+      "Accuracy",
+      "F1-score",
+      "Mean Squared Error",
+      "R-squared"
+    ],
+    "answer": "F1-score",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "F1-score is the harmonic mean of precision and recall, making it more suitable for imbalanced datasets than accuracy, which can be misleading.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_004",
+    "question": "What is the purpose of cross-validation?",
+    "options": [
+      "To increase training data size",
+      "To reduce overfitting and get better model performance estimates",
+      "To speed up training process",
+      "To visualize data distributions"
+    ],
+    "answer": "To reduce overfitting and get better model performance estimates",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Cross-validation helps assess model performance more reliably by training and testing on different data splits, reducing overfitting and providing better generalization estimates.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_005",
+    "question": "In Random Forest, what does 'bagging' refer to?",
+    "options": [
+      "Removing outliers from the dataset",
+      "Bootstrap aggregating - training multiple models on different subsets",
+      "Combining different algorithms together",
+      "Selecting the best features for training"
+    ],
+    "answer": "Bootstrap aggregating - training multiple models on different subsets",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Bagging (Bootstrap Aggregating) involves training multiple models on different bootstrap samples of the data and averaging their predictions to reduce variance.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_006",
+    "question": "What is the kernel trick in Support Vector Machines?",
+    "options": [
+      "A method to speed up SVM training",
+      "A technique to handle missing data",
+      "A way to map data to higher dimensions without explicit computation",
+      "A regularization technique"
+    ],
+    "answer": "A way to map data to higher dimensions without explicit computation",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "The kernel trick allows SVMs to operate in high-dimensional feature spaces without explicitly computing the coordinates in that space, using kernel functions instead.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_007",
+    "question": "What is regularization and why is it used?",
+    "options": [
+      "A technique to increase model complexity",
+      "A method to prevent overfitting by adding penalty terms",
+      "A way to normalize input features",
+      "A technique to handle categorical variables"
+    ],
+    "answer": "A method to prevent overfitting by adding penalty terms",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Regularization adds penalty terms to the loss function to prevent overfitting by discouraging overly complex models, helping improve generalization.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_008",
+    "question": "What is the difference between L1 and L2 regularization?",
+    "options": [
+      "L1 is for classification, L2 is for regression",
+      "L1 promotes sparsity, L2 shrinks coefficients smoothly",
+      "L1 is faster than L2",
+      "There is no difference"
+    ],
+    "answer": "L1 promotes sparsity, L2 shrinks coefficients smoothly",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "L1 regularization (Lasso) can drive coefficients to zero promoting feature selection, while L2 regularization (Ridge) shrinks coefficients smoothly toward zero.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_009",
+    "question": "What is gradient descent?",
+    "options": [
+      "An optimization algorithm that minimizes cost function by iteratively moving toward steepest descent",
+      "A method to visualize data in lower dimensions",
+      "A technique to handle missing values",
+      "A way to split data into training and testing sets"
+    ],
+    "answer": "An optimization algorithm that minimizes cost function by iteratively moving toward steepest descent",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Gradient descent is an iterative optimization algorithm that finds the minimum of a function by repeatedly moving in the direction of steepest descent (negative gradient).",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_010",
+    "question": "What is the curse of dimensionality?",
+    "options": [
+      "When datasets become too large to process",
+      "When high-dimensional spaces cause distance metrics to become less meaningful",
+      "When models take too long to train",
+      "When there are too many categorical variables"
+    ],
+    "answer": "When high-dimensional spaces cause distance metrics to become less meaningful",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "The curse of dimensionality refers to problems that arise when working with high-dimensional data, where distances between points become similar and nearest neighbor concepts break down.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_011",
+    "question": "What is Principal Component Analysis (PCA) used for?",
+    "options": [
+      "Classification of data points",
+      "Dimensionality reduction while preserving variance",
+      "Clustering similar data points",
+      "Predicting future values"
+    ],
+    "answer": "Dimensionality reduction while preserving variance",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "PCA is a dimensionality reduction technique that projects data onto lower-dimensional space while preserving as much variance as possible in the original data.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_012",
+    "question": "What is the difference between precision and recall?",
+    "options": [
+      "Precision = TP/(TP+FP), Recall = TP/(TP+FN)",
+      "Precision = TP/(TP+FN), Recall = TP/(TP+FP)",
+      "They are the same metric",
+      "Precision is for regression, recall is for classification"
+    ],
+    "answer": "Precision = TP/(TP+FP), Recall = TP/(TP+FN)",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Precision measures the accuracy of positive predictions (TP/(TP+FP)), while recall measures the ability to find all positive instances (TP/(TP+FN)).",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_013",
+    "question": "What is k-means clustering?",
+    "options": [
+      "A supervised learning algorithm for classification",
+      "An unsupervised algorithm that partitions data into k clusters",
+      "A method for feature selection",
+      "A technique for data preprocessing"
+    ],
+    "answer": "An unsupervised algorithm that partitions data into k clusters",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "K-means is an unsupervised clustering algorithm that partitions data into k clusters by minimizing within-cluster sum of squares.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_014",
+    "question": "What is ensemble learning?",
+    "options": [
+      "Training one very complex model",
+      "Combining predictions from multiple models to improve performance",
+      "Using only the best performing model",
+      "Training models sequentially"
+    ],
+    "answer": "Combining predictions from multiple models to improve performance",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Ensemble learning combines predictions from multiple models (weak learners) to create a stronger predictor, often achieving better performance than individual models.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_015",
+    "question": "What is the difference between bagging and boosting?",
+    "options": [
+      "Bagging trains models in parallel, boosting trains sequentially with error correction",
+      "Bagging is faster than boosting",
+      "Boosting uses more data than bagging",
+      "There is no difference between them"
+    ],
+    "answer": "Bagging trains models in parallel, boosting trains sequentially with error correction",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Bagging trains multiple models independently in parallel, while boosting trains models sequentially where each model learns from the errors of previous models.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_016",
+    "question": "What is feature engineering?",
+    "options": [
+      "The process of selecting and transforming variables for machine learning models",
+      "Building the model architecture",
+      "Tuning hyperparameters",
+      "Evaluating model performance"
+    ],
+    "answer": "The process of selecting and transforming variables for machine learning models",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Feature engineering involves creating, selecting, and transforming input variables to improve model performance and make patterns more apparent to algorithms.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_017",
+    "question": "What is the ROC curve?",
+    "options": [
+      "A plot of True Positive Rate vs False Positive Rate",
+      "A plot of precision vs recall",
+      "A plot of training vs validation error",
+      "A plot of feature importance"
+    ],
+    "answer": "A plot of True Positive Rate vs False Positive Rate",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "ROC (Receiver Operating Characteristic) curve plots True Positive Rate (sensitivity) against False Positive Rate (1-specificity) at various threshold settings.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_018",
+    "question": "What is overfitting?",
+    "options": [
+      "When a model performs well on training data but poorly on new data",
+      "When a model is too simple",
+      "When training takes too long",
+      "When the dataset is too small"
+    ],
+    "answer": "When a model performs well on training data but poorly on new data",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Overfitting occurs when a model learns the training data too well, including noise and outliers, resulting in poor generalization to new, unseen data.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_019",
+    "question": "What is the purpose of a validation set?",
+    "options": [
+      "To train the model",
+      "To tune hyperparameters and assess model performance during development",
+      "To test final model performance",
+      "To store backup data"
+    ],
+    "answer": "To tune hyperparameters and assess model performance during development",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "The validation set is used during model development to tune hyperparameters and make model selection decisions without touching the test set.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_020",
+    "question": "What is logistic regression used for?",
+    "options": [
+      "Predicting continuous numerical values",
+      "Binary and multiclass classification problems",
+      "Clustering data points",
+      "Dimensionality reduction"
+    ],
+    "answer": "Binary and multiclass classification problems",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Logistic regression is used for classification tasks, using the logistic function to model the probability of class membership.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_021",
+    "question": "What is the difference between parametric and non-parametric models?",
+    "options": [
+      "Parametric models have fixed number of parameters, non-parametric adapt to data complexity",
+      "Parametric models are always better",
+      "Non-parametric models are faster to train",
+      "There is no difference"
+    ],
+    "answer": "Parametric models have fixed number of parameters, non-parametric adapt to data complexity",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Parametric models assume a specific functional form with fixed parameters (e.g., linear regression), while non-parametric models adapt their complexity to the data (e.g., k-NN, decision trees).",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_022",
+    "question": "What is feature scaling and why is it important?",
+    "options": [
+      "Normalizing features to similar ranges to prevent bias toward larger-scale features",
+      "Reducing the number of features",
+      "Creating new features from existing ones",
+      "Removing outliers from features"
+    ],
+    "answer": "Normalizing features to similar ranges to prevent bias toward larger-scale features",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Feature scaling (normalization/standardization) ensures all features contribute equally to distance-based algorithms and gradient descent optimization.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_023",
+    "question": "What is the difference between classification and regression?",
+    "options": [
+      "Classification predicts categories, regression predicts continuous values",
+      "Classification is unsupervised, regression is supervised",
+      "Classification uses more data than regression",
+      "There is no difference"
+    ],
+    "answer": "Classification predicts categories, regression predicts continuous values",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Classification predicts discrete class labels or categories, while regression predicts continuous numerical values.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_024",
+    "question": "What is the purpose of dropout in neural networks?",
+    "options": [
+      "To speed up training",
+      "To prevent overfitting by randomly setting some neurons to zero",
+      "To reduce model size",
+      "To improve accuracy"
+    ],
+    "answer": "To prevent overfitting by randomly setting some neurons to zero",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Dropout is a regularization technique that randomly sets a fraction of neurons to zero during training, preventing the model from relying too heavily on specific neurons.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_025",
+    "question": "What is the difference between online and batch learning?",
+    "options": [
+      "Online learning updates model incrementally, batch learning uses entire dataset",
+      "Online learning is always faster",
+      "Batch learning uses internet, online learning doesn't",
+      "There is no difference"
+    ],
+    "answer": "Online learning updates model incrementally, batch learning uses entire dataset",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Online learning updates the model incrementally with each new data point, while batch learning trains on the entire dataset at once.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_026",
+    "question": "What is the purpose of the learning rate in gradient descent?",
+    "options": [
+      "Controls how fast the model learns from data",
+      "Controls the step size when updating model parameters",
+      "Determines the number of iterations",
+      "Sets the batch size"
+    ],
+    "answer": "Controls the step size when updating model parameters",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Learning rate determines how large steps the algorithm takes when updating parameters. Too high can cause overshooting, too low can make convergence very slow.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_027",
+    "question": "What is transfer learning?",
+    "options": [
+      "Moving data between different systems",
+      "Using pre-trained models and adapting them to new tasks",
+      "Transferring knowledge between team members",
+      "Converting between different file formats"
+    ],
+    "answer": "Using pre-trained models and adapting them to new tasks",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Transfer learning leverages knowledge from pre-trained models on large datasets and adapts them to new, often smaller, related tasks.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_028",
+    "question": "What is the difference between generative and discriminative models?",
+    "options": [
+      "Generative models learn P(X,Y), discriminative models learn P(Y|X)",
+      "Generative models are always better",
+      "Discriminative models generate new data",
+      "There is no difference"
+    ],
+    "answer": "Generative models learn P(X,Y), discriminative models learn P(Y|X)",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Generative models learn the joint probability P(X,Y) and can generate new data, while discriminative models learn the conditional probability P(Y|X) for classification.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_029",
+    "question": "What is early stopping?",
+    "options": [
+      "Stopping training when validation error starts increasing",
+      "Stopping training after a fixed number of epochs",
+      "Stopping when accuracy reaches 100%",
+      "Stopping when the model becomes too complex"
+    ],
+    "answer": "Stopping training when validation error starts increasing",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Early stopping is a regularization technique that stops training when the validation error begins to increase, preventing overfitting.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_030",
+    "question": "What is the purpose of data augmentation?",
+    "options": [
+      "To increase dataset size by creating modified versions of existing data",
+      "To remove noise from data",
+      "To compress data for storage",
+      "To visualize data better"
+    ],
+    "answer": "To increase dataset size by creating modified versions of existing data",
+    "difficulty": "easy",
+    "time_limit": 15,
+    "explanation": "Data augmentation artificially increases training data size by applying transformations (rotation, scaling, etc.) to existing data, helping prevent overfitting.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_031",
+    "question": "What is the difference between hard and soft clustering?",
+    "options": [
+      "Hard clustering assigns each point to one cluster, soft clustering assigns probabilities",
+      "Hard clustering is more accurate",
+      "Soft clustering is faster",
+      "There is no difference"
+    ],
+    "answer": "Hard clustering assigns each point to one cluster, soft clustering assigns probabilities",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Hard clustering assigns each data point to exactly one cluster, while soft clustering assigns membership probabilities to multiple clusters.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_032",
+    "question": "What is the vanishing gradient problem?",
+    "options": [
+      "When gradients become too small in deep networks, making learning difficult",
+      "When gradients become too large",
+      "When the learning rate is too high",
+      "When there's not enough training data"
+    ],
+    "answer": "When gradients become too small in deep networks, making learning difficult",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "The vanishing gradient problem occurs in deep networks when gradients become exponentially smaller as they propagate backward, making it difficult to train early layers.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_033",
+    "question": "What is transfer learning?",
+    "options": [
+      "Using pre-trained models as starting points for new tasks",
+      "Transferring data between models",
+      "Learning to transfer knowledge manually",
+      "Moving models between computers"
+    ],
+    "answer": "Using pre-trained models as starting points for new tasks",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Transfer learning leverages knowledge from pre-trained models (often trained on large datasets) and adapts them to new, related tasks with less data and computation.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_034",
+    "question": "What is a foundation model?",
+    "options": [
+      "A large-scale model trained on diverse data that can be adapted to many downstream tasks",
+      "The first model in a series",
+      "A model that forms the foundation of a building",
+      "A basic model with minimal features"
+    ],
+    "answer": "A large-scale model trained on diverse data that can be adapted to many downstream tasks",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Foundation models are large, general-purpose models trained on broad data that serve as a base for adaptation to various specific tasks through fine-tuning or prompting.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_035",
+    "question": "What is zero-shot learning?",
+    "options": [
+      "Performing tasks without any training examples for that specific task",
+      "Learning with zero parameters",
+      "Training that takes zero time",
+      "Learning without any data"
+    ],
+    "answer": "Performing tasks without any training examples for that specific task",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Zero-shot learning enables models to perform tasks they haven't been explicitly trained on, often by leveraging knowledge from related tasks or semantic understanding.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_036",
+    "question": "What is the difference between supervised and self-supervised learning?",
+    "options": [
+      "Supervised uses labeled data, self-supervised creates labels from the data itself",
+      "Self-supervised is always better than supervised",
+      "Supervised learning is automatic, self-supervised is manual",
+      "There is no difference"
+    ],
+    "answer": "Supervised uses labeled data, self-supervised creates labels from the data itself",
+    "difficulty": "medium",
+    "time_limit": 20,
+    "explanation": "Supervised learning requires external labels, while self-supervised learning generates supervisory signals from the data structure itself (e.g., predicting masked words).",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_037",
+    "question": "What is multimodal learning?",
+    "options": [
+      "Learning from multiple types of data (text, images, audio) simultaneously",
+      "Learning with multiple models",
+      "Learning in multiple modes",
+      "Learning with multiple algorithms"
+    ],
+    "answer": "Learning from multiple types of data (text, images, audio) simultaneously",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Multimodal learning combines information from different data modalities to create richer representations and enable cross-modal understanding and generation.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_038",
+    "question": "What is continual learning (lifelong learning)?",
+    "options": [
+      "Learning new tasks without forgetting previously learned tasks",
+      "Learning that continues forever",
+      "Learning throughout one's life",
+      "Learning that never stops training"
+    ],
+    "answer": "Learning new tasks without forgetting previously learned tasks",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Continual learning addresses the challenge of learning new tasks sequentially while retaining knowledge from previous tasks, avoiding catastrophic forgetting.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_039",
+    "question": "What is federated learning?",
+    "options": [
+      "Training models across decentralized data sources without centralizing the data",
+      "Learning controlled by a federation",
+      "Learning that uses federal data",
+      "Learning with federated databases"
+    ],
+    "answer": "Training models across decentralized data sources without centralizing the data",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Federated learning enables collaborative model training across multiple parties while keeping data localized, preserving privacy and reducing data transfer.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_040",
+    "question": "What is model distillation?",
+    "options": [
+      "Training a smaller model to mimic a larger, more complex model",
+      "Removing impurities from models",
+      "Extracting the essence of a model",
+      "Converting models to liquid form"
+    ],
+    "answer": "Training a smaller model to mimic a larger, more complex model",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Knowledge distillation transfers knowledge from a large teacher model to a smaller student model, maintaining performance while reducing computational requirements.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_041",
+    "question": "What is the scaling law in machine learning?",
+    "options": [
+      "The relationship between model performance and factors like size, data, and compute",
+      "Laws governing model scaling",
+      "Rules for scaling up training",
+      "Mathematical laws for model size"
+    ],
+    "answer": "The relationship between model performance and factors like size, data, and compute",
+    "difficulty": "hard",
+    "time_limit": 25,
+    "explanation": "Scaling laws describe how model performance improves predictably with increases in model size, training data, and computational resources.",
+    "topic": "Machine Learning"
+  },
+  {
+    "id": "ml_042",
+    "question": "What is few-shot learning?",
+    "options": [
+      "Learning to perform tasks with only a few training examples",
+      "Learning that takes few shots to complete",
+      "Learning with few parameters",
+      "Quick learning techniques"
+    ],
+    "answer": "Learning to perform tasks with only a few training examples",
+    "difficulty": "medium",
+    "time_limit": 18,
+    "explanation": "Few-shot learning enables models to quickly adapt to new tasks using only a small number of examples, often leveraging prior knowledge or meta-learning.",
+    "topic": "Machine Learning"
+  }
+]
